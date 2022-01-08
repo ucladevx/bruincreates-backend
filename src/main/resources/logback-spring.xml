@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- All log files located in logs file of the project -->
+    <property name="LOGS" value="./src/test/log" />
+
+    <appender name="RollingFileByDate" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>src/main/resources/log/%d{yyyy-MM-dd}.log</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date [%level] from %logger in %thread - %message%n%xException</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Define the console log format -->
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %green(%d{ISO8601}) %highlight(%-5level) [%blue(%t)] %yellow(%C{1.}): %msg%n%throwable
+            </Pattern>
+        </layout>
+    </appender>
+
+
+    <!-- Log everything at error level -->
+    <root level="error">
+        <appender-ref ref="RollingFileByDate" />
+        <appender-ref ref="Console" />
+    </root>
+
+    <!-- Log to console at info level -->
+    <root level="info">
+        <appender-ref ref="Console" />
+    </root>
+</configuration>

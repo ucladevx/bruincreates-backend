@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--mybatis code generator config-->
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!-- load config file -->
+    <properties resource="application.properties"/>
+
+    <!-- one database per context, elements of a context follows below pattern:
+        property*,plugin*,commentGenerator?,jdbcConnection,javaTypeResolver?,
+        javaModelGenerator,sqlMapGenerator?,javaClientGenerator?,table+ -->
+    <context id="myContext" targetRuntime="MyBatis3" defaultModelType="flat">
+
+        <!-- add equals() and hashcode() method for generated Java objects -->
+        <!--<plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin"/>-->
+        <!-- comment generator -->
+        <commentGenerator>
+            <!-- option to disable comments -->
+            <property name="suppressAllComments" value="false"/>
+            <!-- option for disable timestamp -->
+            <!--<property name="suppressDate" value="true"/>-->
+            <!-- option for adding db comments to code comments -->
+            <!--<property name="addRemarkComments" value="true"/>-->
+        </commentGenerator>
+
+        <!-- jdbc connection -->
+        <jdbcConnection driverClass="${spring.datasource.driver-class-name}"
+                        connectionURL="${spring.datasource.url}"
+                        userId="${spring.datasource.username}"
+                        password="${spring.datasource.password}">
+            <!--newer version mysql-connector-java needs nullCatalogMeansCurrent=true -->
+            <property name="nullCatalogMeansCurrent" value="true"/>
+        </jdbcConnection>
+
+        <!-- type conversion -->
+        <javaTypeResolver>
+            <!-- option for using BigDecimal, default false
+                 false, JDBC Decimal & Numeric => Integer
+                 true, JDBC Decimal & Numeric => java.math.BigDecimal -->
+            <property name="forceBigDecimals" value="true"/>
+            <!-- option for translating JDBC timestamp
+                false，all JDBC time => java.util.Data
+                true, use the following conversion rule:
+                    DATE	                -> java.time.LocalDate
+                    TIME	                -> java.time.LocalTime
+                    TIMESTAMP               -> java.time.LocalDateTime
+                    TIME_WITH_TIMEZONE  	-> java.time.OffsetTime
+                    TIMESTAMP_WITH_TIMEZONE	-> java.time.OffsetDateTime -->
+            <!--<property name="useJSR310Types" value="false"/>-->
+        </javaTypeResolver>
+
+        <!-- generate java object -->
+        <javaModelGenerator targetPackage="com.bruincreates.server.dao.po" targetProject="src/main/java">
+            <!-- option for schema as suffix, default false -->
+            <!--<property name="enableSubPackages" value="false"/>-->
+            <!-- option for trim String type data, default false -->
+            <!-- <property name="trimStrings" value="true"/> -->
+        </javaModelGenerator>
+
+        <!-- generate Mapper.xml -->
+        <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources">
+            <!--<property name="enableSubPackages" value="false"/>-->
+        </sqlMapGenerator>
+
+        <!-- generate XxxMapper.java interface-->
+        <javaClientGenerator targetPackage="com.bruincreates.server.dao.mapper" targetProject="src/main/java" type="XMLMAPPER">
+            <!--<property name="enableSubPackages" value="false"/>-->
+        </javaClientGenerator>
+
+        <!-- TODO: modify [tableName] and [domainObjectName] to generate mappers -->
+        <table schema="" tableName="user_auth" domainObjectName="UserAuth"
+               enableCountByExample="false" enableDeleteByExample="true" enableSelectByExample="true"
+               enableUpdateByExample="true" selectByExampleQueryId="false">
+            <!-- option for using original column name, default false -->
+            <!--<property name="useActualColumnNames" value="false" />-->
+        </table>
+    </context>
+</generatorConfiguration>
