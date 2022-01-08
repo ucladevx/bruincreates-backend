@@ -1,5 +1,8 @@
 package com.bruincreates.server.security;
 
+import com.bruincreates.server.model.servlet.ResponseCode;
+import com.bruincreates.server.model.servlet.RestResponse;
+import com.bruincreates.server.utility.ServletUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
@@ -19,7 +22,7 @@ public class LoginFailureHandler implements AuthenticationFailureHandler {
         response.setHeader("Access-Control-Allow-Origin", "*");
         response.setHeader("Access-Control-Allow-Headers", "token, Accept, Origin, X-Requested-With, Content-Type, Last-Modified");
         response.setHeader("Content-type", "application/json;charset=UTF-8");
-        response.getWriter().print("failure");
+        ServletUtils.render(httpServletRequest, response, RestResponse.fail(ResponseCode.USER_LOGIN_FAIL));
     }
 
 }
