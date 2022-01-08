@@ -296,3 +296,4 @@ org.springframework.security.authentication.InsufficientAuthenticationException:
 2022-01-07 22:29:02,006 [INFO] from com.bruincreates.server.security.RestHttpSessionIdResolver in http-nio-8080-exec-1 - BruinCreatesSessionId=81420285-ae05-4a33-8edf-ec3d2dc78c58
 2022-01-07 22:29:52,491 [INFO] from com.bruincreates.server.security.LoginSuccessHandler in http-nio-8080-exec-3 - Login succeed: [root]
 2022-01-07 22:29:52,513 [INFO] from com.bruincreates.server.security.RestHttpSessionIdResolver in http-nio-8080-exec-3 - BruinCreatesSessionId=fe88bb14-1fef-4096-8c6c-522e7a386704
+2022-01-07 22:49:37,230 [INFO] from org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor in Thread-64 - Shutting down ExecutorService 'applicationTaskExecutor'
