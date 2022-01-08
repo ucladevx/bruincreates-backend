@@ -70,7 +70,8 @@
         </javaClientGenerator>
 
         <!-- TODO: modify [tableName] and [domainObjectName] to generate mappers -->
-        <table schema="" tableName="user_auth" domainObjectName="UserAuth"
+        <!-- TODO: example: tableName="some_mysql_table" domainObjectName="SomeMySqlTable" -->
+        <table schema="" tableName="" domainObjectName=""
                enableCountByExample="false" enableDeleteByExample="true" enableSelectByExample="true"
                enableUpdateByExample="true" selectByExampleQueryId="false">
             <!-- option for using original column name, default false -->

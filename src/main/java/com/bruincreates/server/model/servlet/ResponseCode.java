@@ -28,13 +28,6 @@ public enum ResponseCode {
     USER_IS_EXIST(11012, "User Already Exists"),
     NO_AUTHORIZATION(1003006, "Not Authorized"),
 
-    //Configuration
-    CONFIG_ID_IS_NOT_EXIST(14001, "配置信息为空"),
-    CONFIG_IS_NOT_EXIST(14002, "配置ID无效"),
-    CONFIG_IS_EXIST(14002, "配置ID已存在"),
-    CONFIG_IS_SYSTEM(14003, "系统配置不允许修改"),
-    CONFIG_IS_NOT_DELETE(14003, "系统配置不允许删除"),
-
     //File System
     FILE_NOT_EXIST(16001, "File Not Found"),
     FILE_UPLOAD_EXCEPTION(16002, "Error Uploading File"),
@@ -42,11 +35,8 @@ public enum ResponseCode {
     FILE_DELETE_FAIL(16004, "Error Deleting File"),
 
     //Resources
-    RESOURCE_NOT_FIND(12001, "无效的资源ID"),
-    RESOURCE_IS_EXIST(12001, "资源ID已存在"),
-    RESOURCE_PARENT_NOT_FIND(12002, "无效资源父节点ID"),
-    RESOURCE_PARENT_INVALID(12003, "无效资源父节点ID"),
-    RESOURCE_HAVE_SUB(12004, "该资源下有子资源，不能删除");
+    RESOURCE_NOT_FIND(12001, "Invalid Resource Id"),
+    RESOURCE_IS_EXIST(12001, "Resource Id Existed");
 
     private int code;
     private String message;

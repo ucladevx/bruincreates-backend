@@ -52,12 +52,17 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     SessionInformationExpiredHandler sessionInformationExpiredHandler;
 
+    public static final String LOGIN_URL = "/api/account/login";
+
+    public static final String LOGOUT_URL = "/api/account/register";
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.cors().and().csrf().disable();
         http.authorizeRequests()
                 // released and protected api
-                .antMatchers("/api/user").permitAll()
+                .antMatchers(LOGIN_URL).permitAll()
+                .antMatchers(LOGOUT_URL).permitAll()
                 .anyRequest().authenticated()
                 // exception management
                 .and().exceptionHandling()
