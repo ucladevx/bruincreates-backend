@@ -5,7 +5,9 @@ import com.bruincreates.server.dao.po.User;
 import com.bruincreates.server.dao.po.UserExample;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -16,6 +18,9 @@ public class AccountService {
     @Autowired
     UserMapper userMapper;
 
+    @Autowired
+    PasswordEncoder passwordEncoder;
+
     public User findUserAuthByUsername(String username) {
 
         UserExample userExample = new UserExample();
@@ -23,6 +28,16 @@ public class AccountService {
 
         List<User> userList = userMapper.selectByExample(userExample);
         return userList != null ? userList.size() > 0 ? userList.get(0) : null : null;
+
+    }
+
+    @Transactional(rollbackFor = Exception.class)
+    public void register() {
+        User user = new User();
+        user.setUsername("test");
+        user.setPassword(passwordEncoder.encode("123456"));
+        user.setEmail("test@gmail.com");
+        userMapper.insertSelective(user);
     }
 
 }

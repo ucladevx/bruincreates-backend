@@ -54,26 +54,27 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     public static final String LOGIN_URL = "/api/account/login";
 
-    public static final String LOGOUT_URL = "/api/account/register";
+    public static final String LOGOUT_URL = "/api/account/logout";
+
+    public static final String REGISTRATION_URL = "/api/account/register";
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.cors().and().csrf().disable();
         http.authorizeRequests()
                 // released and protected api
-                .antMatchers(LOGIN_URL).permitAll()
-                .antMatchers(LOGOUT_URL).permitAll()
+                .antMatchers(REGISTRATION_URL).permitAll()
                 .anyRequest().authenticated()
                 // exception management
                 .and().exceptionHandling()
                 .authenticationEntryPoint(anonymousAuthenticationEntryPoint)
                 .accessDeniedHandler(accessDeniedHandler)
                 // login management
-                .and().formLogin().permitAll()
+                .and().formLogin().loginProcessingUrl("/api/account/login").permitAll()
                 .successHandler(loginSuccessHandler)
                 .failureHandler(loginFailureHandler)
                 // logout management
-                .and().logout().permitAll()
+                .and().logout().logoutUrl("/api/account/logout").permitAll()
                 .logoutSuccessHandler(logoutSuccessHandler)
                 .deleteCookies(RestHttpSessionIdResolver.AUTH_TOKEN)
                 // session management

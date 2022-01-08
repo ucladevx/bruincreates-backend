@@ -4,7 +4,7 @@ use bruincreates;
 create table if not exists `user` (
     `id`                int(11) not null auto_increment,
     `username`          varchar(32) not null unique,
-    `password`          varchar(32) not null,
+    `password`          varchar(256) not null,
     `email`             varchar(64) not null unique,
     `mobile`            int(11) not null default '0000000000',
     `profile_name`      varchar(32) not null default 'User',
