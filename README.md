@@ -15,10 +15,6 @@ For building and running the application you need:
 - [MySql 8.0.25](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-25.html)
 - [Redis 6.2.6](https://redis.io/)
 - [Elasticsearch 7.1.6](https://www.elastic.co/)
-- [SpringBoot 2.2.6](https://spring.io/projects/spring-boot#support)
-- [SpringSecurity 5.2.2](https://spring.io/projects/spring-security)
-- [SpringSession 2.2.2](https://spring.io/projects/spring-session)
-
 
 ## Running the application locally
 
