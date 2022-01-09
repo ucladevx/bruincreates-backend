@@ -31,7 +31,7 @@ public class AccountController {
     @PostMapping("/register")
     public RestResponse<UserControlBlock> register(@Valid @RequestBody RegistrationRequest request) {
         accountService.register(request);
-        return RestResponse.success(ServletUtils.getCurrentPrincipal());
+        return RestResponse.success();
     }
 
 }

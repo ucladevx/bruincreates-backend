@@ -5,7 +5,9 @@ import com.bruincreates.server.dao.po.User;
 import com.bruincreates.server.dao.po.UserExample;
 import com.bruincreates.server.model.request.RegistrationRequest;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.validator.routines.EmailValidator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -32,7 +34,12 @@ public class AccountService {
     }
 
     @Transactional(rollbackFor = Exception.class)
-    public void register(RegistrationRequest request) {
+    public void register(RegistrationRequest request){
+
+        boolean validEmail = EmailValidator.getInstance().isValid(request.getEmail());
+        if (!validEmail) {
+            throw new BadCredentialsException("Registration Error: Invalid Email");
+        }
 
         User user = new User();
         user.setUsername(request.getUsername());

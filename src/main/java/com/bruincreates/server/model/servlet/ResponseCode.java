@@ -36,7 +36,10 @@ public enum ResponseCode {
 
     //Resources
     RESOURCE_NOT_FIND(12001, "Invalid Resource Id"),
-    RESOURCE_IS_EXIST(12001, "Resource Id Existed");
+    RESOURCE_IS_EXIST(12001, "Resource Id Existed"),
+
+    //Request
+    BAD_REQUEST(13001, "Bad Request");
 
     private int code;
     private String message;
