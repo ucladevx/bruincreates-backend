@@ -6,7 +6,7 @@ create table if not exists `user` (
     `username`          varchar(32) not null unique,
     `password`          varchar(256) not null,
     `email`             varchar(64) not null unique,
-    `mobile`            int(11) not null default '0000000000',
+    `mobile`            int(11) not null default '1000000000',
     `profile_name`      varchar(32) not null default 'User',
     `avatar_url`        varchar(256) not null default '',
     `bio`               varchar(256) not null default '',

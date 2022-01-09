@@ -1,6 +1,10 @@
 package com.bruincreates.server.utility;
 
+import com.bruincreates.server.dao.po.User;
+import com.bruincreates.server.model.user.UserControlBlock;
 import com.google.gson.Gson;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -24,6 +28,14 @@ public class ServletUtils {
 
     public static HttpServletResponse getResponse() {
         return getRequestAttributes().getResponse();
+    }
+
+    public static UserControlBlock getCurrentPrincipal() {
+        return (UserControlBlock) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+    }
+
+    public static Authentication getAuthentication() {
+        return SecurityContextHolder.getContext().getAuthentication();
     }
 
     public static ServletRequestAttributes getRequestAttributes() {

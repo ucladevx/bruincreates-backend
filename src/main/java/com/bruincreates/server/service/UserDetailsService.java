@@ -31,7 +31,7 @@ public class UserDetailsService implements org.springframework.security.core.use
             throw new UsernameNotFoundException("USER_NOT_EXIST");
         }
 
-        User user = accountService.findUserAuthByUsername(username);
+        User user = accountService.findUserByUsername(username);
 
         if (user == null) {
             log.info("[loadUserByUsername]: user doesn't exist for {}", username);

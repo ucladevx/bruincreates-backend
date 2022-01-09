@@ -1,4 +1,4 @@
-package com.bruincreates.server.utility;
+package com.bruincreates.server.exception;
 
 import com.bruincreates.server.model.servlet.ResponseCode;
 import com.bruincreates.server.model.servlet.RestResponse;
@@ -25,7 +25,6 @@ public class GlobalExceptionHandler {
     public RestResponse<String> exceptionHandler(UsernameNotFoundException e) {
         return RestResponse.fail(ResponseCode.USER_NOT_EXIST, e.getMessage());
     }
-
 
     @ExceptionHandler(Exception.class)
     public RestResponse<String> exceptionHandler(Exception e) {
