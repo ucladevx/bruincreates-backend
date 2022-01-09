@@ -46,11 +46,14 @@ mvn spring-boot:run
 This project is secured using Spring Security and Spring Session Redis. Authentication is needed before accessing the server, for example:
 
 ```shell
-# authenticate test user
-curl -X POST -F 'username=root' -F 'password=123456' localhost:8080/login
+# login test user using postman
+request: POST
+body: form-data (username=test, password=123456)
+url: localhost:8080/api/account/login
 
-# user session is established, if anything happens, use Postman
-curl -X GET localhost:8080
+# try sample api
+request: GET
+url: localhost:8080/api/test
 ```
 
 ## Copyright
