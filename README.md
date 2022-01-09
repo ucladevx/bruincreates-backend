@@ -47,12 +47,12 @@ This project is secured using Spring Security and Spring Session Redis. Authenti
 
 ```shell
 # login test user using postman
-request: POST
+request: post
 body: form-data (username=test, password=123456)
 url: localhost:8080/api/account/login
 
 # try sample api
-request: GET
+request: get
 url: localhost:8080/api/test
 ```
 
