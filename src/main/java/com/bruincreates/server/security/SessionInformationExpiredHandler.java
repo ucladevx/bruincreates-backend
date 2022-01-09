@@ -18,7 +18,7 @@ public class SessionInformationExpiredHandler implements SessionInformationExpir
     public void onExpiredSessionDetected(SessionInformationExpiredEvent sessionInformationExpiredEvent) throws IOException {
         log.error("Session terminated early: [{}]", sessionInformationExpiredEvent.toString());
         ServletUtils.render(sessionInformationExpiredEvent.getRequest(),
-                sessionInformationExpiredEvent.getResponse(), RestResponse.fail(ResponseCode.USER_MAX_LOGIN));
+                sessionInformationExpiredEvent.getResponse(), RestResponse.fail(ResponseCode.INVALID_USER_SESSION));
     }
 
 }

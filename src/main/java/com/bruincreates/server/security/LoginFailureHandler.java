@@ -22,7 +22,7 @@ public class LoginFailureHandler implements AuthenticationFailureHandler {
         response.setHeader("Access-Control-Allow-Origin", "*");
         response.setHeader("Access-Control-Allow-Headers", "token, Accept, Origin, X-Requested-With, Content-Type, Last-Modified");
         response.setHeader("Content-type", "application/json;charset=UTF-8");
-        ServletUtils.render(httpServletRequest, response, RestResponse.fail(ResponseCode.USER_LOGIN_FAIL));
+        ServletUtils.render(httpServletRequest, response, RestResponse.fail(ResponseCode.USER_NOT_EXIST));
     }
 
 }

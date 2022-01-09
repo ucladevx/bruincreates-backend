@@ -19,7 +19,7 @@ public class LoginUserAccessDeniedHandler implements AccessDeniedHandler {
     @Override
     public void handle(HttpServletRequest request, HttpServletResponse response, AccessDeniedException accessDeniedException) throws IOException {
         log.warn("Access denied: [{}], AccessDeniedException={}", request.getRequestURI(), accessDeniedException);
-        ServletUtils.render(request, response, RestResponse.build(ResponseCode.NO_AUTHORIZATION));
+        ServletUtils.render(request, response, RestResponse.build(ResponseCode.NOT_AUTHORIZED));
     }
 
 }

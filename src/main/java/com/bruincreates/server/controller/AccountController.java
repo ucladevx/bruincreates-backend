@@ -1,5 +1,6 @@
 package com.bruincreates.server.controller;
 
+import com.bruincreates.server.exception.BadRequestException;
 import com.bruincreates.server.model.request.RegistrationRequest;
 import com.bruincreates.server.model.servlet.RestResponse;
 import com.bruincreates.server.model.user.UserControlBlock;
@@ -29,7 +30,7 @@ public class AccountController {
     AccountService accountService;
 
     @PostMapping("/register")
-    public RestResponse<UserControlBlock> register(@Valid @RequestBody RegistrationRequest request) {
+    public RestResponse<UserControlBlock> register(@Valid @RequestBody RegistrationRequest request) throws BadRequestException {
         accountService.register(request);
         return RestResponse.success();
     }

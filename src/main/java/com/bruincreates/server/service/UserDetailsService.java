@@ -28,14 +28,14 @@ public class UserDetailsService implements org.springframework.security.core.use
 
         if (username == null || username.length() < 1) {
             log.info("[loadUserByUsername]: username is empty");
-            throw new UsernameNotFoundException("USER_NOT_EXIST");
+            throw new UsernameNotFoundException("User Not Found");
         }
 
         User user = accountService.findUserByUsername(username);
 
         if (user == null) {
             log.info("[loadUserByUsername]: user doesn't exist for {}", username);
-            throw new UsernameNotFoundException("USER_NOT_EXIST");
+            throw new UsernameNotFoundException("User Not Found");
         }
 
         return new UserControlBlock(user, IpUtils.getIpAddr(ServletUtils.getRequest()), LocalDateTime.now());

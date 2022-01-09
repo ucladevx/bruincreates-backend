@@ -19,7 +19,7 @@ public class InvalidSessionHandler implements InvalidSessionStrategy {
     @Override
     public void onInvalidSessionDetected(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         log.info("Session expired: [{}]", request.getRequestURI());
-        ServletUtils.render(request, response, RestResponse.fail(ResponseCode.USER_LOGIN_TIMEOUT));
+        ServletUtils.render(request, response, RestResponse.fail(ResponseCode.INVALID_USER_SESSION));
     }
 
 }

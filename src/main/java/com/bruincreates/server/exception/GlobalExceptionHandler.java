@@ -3,14 +3,13 @@ package com.bruincreates.server.exception;
 import com.bruincreates.server.model.servlet.ResponseCode;
 import com.bruincreates.server.model.servlet.RestResponse;
 import org.springframework.dao.DataAccessException;
-import org.springframework.dao.DuplicateKeyException;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-
-import java.sql.SQLIntegrityConstraintViolationException;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
 /**
  * GlobalExceptionHandler intercepts all exceptions and returns appropriate
@@ -27,34 +26,33 @@ import java.sql.SQLIntegrityConstraintViolationException;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
+    @ExceptionHandler(BadRequestException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ResponseBody
+    public RestResponse<String> exceptionHandler(BadRequestException e) {
+        return RestResponse.fail(ResponseCode.BAD_REQUEST, e.getMessage());
+    }
+
+    @ExceptionHandler(BadCredentialsException.class)
+    @ResponseStatus(HttpStatus.FORBIDDEN)
+    @ResponseBody
+    public RestResponse<String> exceptionHandler(BadCredentialsException e) {
+        return RestResponse.fail(ResponseCode.NOT_AUTHORIZED, e.getMessage());
+    }
+
+
     @ExceptionHandler(UsernameNotFoundException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ResponseBody
     public RestResponse<String> exceptionHandler(UsernameNotFoundException e) {
         return RestResponse.fail(ResponseCode.USER_NOT_EXIST, e.getMessage());
     }
 
-    @ExceptionHandler(BadCredentialsException.class)
-    public RestResponse<String> exceptionHandler(BadCredentialsException e) {
-        return RestResponse.fail(ResponseCode.BAD_REQUEST, e.getMessage());
-    }
-
-    @ExceptionHandler(ClassCastException.class)
-    public RestResponse<String> exceptionHandler(ClassCastException e) {
-        return RestResponse.fail(ResponseCode.BAD_REQUEST, "Invalid Input");
-    }
-
-    @ExceptionHandler(DuplicateKeyException.class)
-    public RestResponse<String> exceptionHandler(DuplicateKeyException e) {
-        return RestResponse.fail(ResponseCode.BAD_REQUEST, "Duplicate User");
-    }
-
-    @ExceptionHandler(DataAccessException.class)
-    public RestResponse<String> exceptionHandler(DataAccessException e) {
-        return RestResponse.fail(ResponseCode.BAD_REQUEST, "Error Querying Database");
-    }
-
     @ExceptionHandler(Exception.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ResponseBody
     public RestResponse<String> exceptionHandler(Exception e) {
-        return RestResponse.fail(ResponseCode.FAIL, e.getMessage());
+        return RestResponse.fail(ResponseCode.FAIL);
     }
 
 }
