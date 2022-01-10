@@ -5,10 +5,10 @@ import com.bruincreates.server.dao.po.User;
 import com.bruincreates.server.dao.po.UserExample;
 import com.bruincreates.server.exception.BadRequestException;
 import com.bruincreates.server.model.request.RegistrationRequest;
+import com.bruincreates.server.utility.JwtUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.validator.routines.EmailValidator;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -56,9 +56,25 @@ public class AccountService {
             throw new BadRequestException("Duplicate Username or Email");
         }
 
-        //send verification email
+        String jwt = JwtUtil.createToken(user.getUsername(), "user");
+        String verificationUrl = "localhost:8080/api/account/verify?jwt=" + jwt;
 
+        //TODO: change to user email
+        //TODO: improve speed by changing to asynchronous call
+        emailService.sendSimpleEmail("ocestarsan@gmail.com",
+                "BruinCreates: Please Verify Your Email",
+                "Email Verification Link: " + verificationUrl);
+    }
 
+    public void verifyEmail(String username) {
+
+        UserExample userExample = new UserExample();
+        userExample.createCriteria().andUsernameEqualTo(username);
+
+        User user = new User();
+        user.setEmailVerified(1);
+
+        userMapper.updateByExampleSelective(user, userExample);
     }
 
 }
