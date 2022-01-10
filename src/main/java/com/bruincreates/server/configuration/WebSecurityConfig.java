@@ -54,9 +54,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     public static final String REGISTRATION_URL = "/api/account/register";
 
-    public static final String EMAIL_VERIFICATION_URL = "/api/account/verify";
+    public static final String EMAIL_VERIFICATION_URL = "/api/account/verifyEmail";
 
-    public static final String EMAIL_RESET_URL = "/api/account/reset";
+    public static final String EMAIL_RESET_URL = "/api/account/sendResetUrl";
+
+    public static final String RESET_URL = "/api/account/resetPassword";
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -66,6 +68,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(REGISTRATION_URL).permitAll()
                 .antMatchers(EMAIL_VERIFICATION_URL).permitAll()
                 .antMatchers(EMAIL_RESET_URL).permitAll()
+                .antMatchers(RESET_URL).permitAll()
                 .anyRequest().authenticated()
                 // exception management
                 .and().exceptionHandling()

@@ -57,7 +57,7 @@ public class AccountService {
         }
 
         String jwt = JwtUtil.createToken(user.getUsername(), "user");
-        String verificationUrl = "localhost:8080/api/account/verify?jwt=" + jwt;
+        String verificationUrl = "localhost:8080/api/account/verifyEmail?jwt=" + jwt;
 
         //TODO: change to user email
         //TODO: improve speed by changing to asynchronous call
