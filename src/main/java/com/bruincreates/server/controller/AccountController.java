@@ -33,11 +33,28 @@ public class AccountController {
         return RestResponse.success();
     }
 
-    @GetMapping("/verify")
-    public RestResponse<String> verify(@RequestParam("jwt") String jwt) {
+    @GetMapping("/verifyEmail")
+    public RestResponse<String> verifyEmail(@RequestParam("jwt") String jwt) {
         String username = JwtUtil.parseToken(jwt);
         accountService.verifyEmail(username);
         return RestResponse.success("Email Verified");
+    }
+
+    @PostMapping("/sendResetUrl")
+    public RestResponse<String> sendPasswordResetUrl() {
+        //get username, get email
+        //send link (generate jwt + url)
+        //and return
+        return RestResponse.success("Password Reset Link Sent");
+    }
+
+    @PostMapping("/resetPassword")
+    public RestResponse<String> resetPassword() {
+        //get password, jwt
+        //get username from jwt
+        //update username, password
+        //and return
+        return RestResponse.success("Password Reset Succeed");
     }
 
 }
