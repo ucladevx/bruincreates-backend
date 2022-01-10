@@ -47,7 +47,7 @@ This project is secured using Spring Security and Spring Session Redis. Authenti
 
 ```shell
 # register user
-request: post
+POST: localhost:8080/api/account/register
 body: json
 {
   "username" : "test",
@@ -55,17 +55,15 @@ body: json
   "profileName" : "test",
   "email" : "some_real_email@gmail.com"
 }
-url: localhost:8080/api/account/register
 
 # login user
-request: post
+POST: localhost:8080/api/account/login
 body: form-data
 username:test
 password:test
 
 # try sample query api
-request: get
-url: localhost:8080/api/test
+GET: localhost:8080/api/test
 ```
 
 ## Copyright
