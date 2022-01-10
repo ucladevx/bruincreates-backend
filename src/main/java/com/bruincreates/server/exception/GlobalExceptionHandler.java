@@ -2,7 +2,6 @@ package com.bruincreates.server.exception;
 
 import com.bruincreates.server.model.servlet.ResponseCode;
 import com.bruincreates.server.model.servlet.RestResponse;
-import org.springframework.dao.DataAccessException;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

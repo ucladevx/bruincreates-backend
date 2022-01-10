@@ -8,10 +8,9 @@ import com.bruincreates.server.model.request.RegistrationRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.validator.routines.EmailValidator;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -24,6 +23,9 @@ public class AccountService {
 
     @Autowired
     PasswordEncoder passwordEncoder;
+
+    @Autowired
+    EmailService emailService;
 
     public User findUserByUsername(String username) {
 
@@ -53,6 +55,10 @@ public class AccountService {
         } catch (Exception e) {
             throw new BadRequestException("Duplicate Username or Email");
         }
+
+        //send verification email
+
+
     }
 
 }
