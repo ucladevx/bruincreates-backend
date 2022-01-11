@@ -72,7 +72,7 @@ public class AccountService {
         userExample.createCriteria().andUsernameEqualTo(username);
 
         User user = new User();
-        user.setEmailVerified(1);
+        user.setVerified(1);
 
         userMapper.updateByExampleSelective(user, userExample);
     }

@@ -70,7 +70,7 @@ public class UserControlBlock implements UserDetails, CredentialsContainer {
 
     @Override
     public boolean isAccountNonLocked() {
-        return user.getAccountLocked() == SecurityFlag.UN_LOCKED;
+        return user.getLocked() == SecurityFlag.UN_LOCKED;
     }
 
     @Override
@@ -80,7 +80,7 @@ public class UserControlBlock implements UserDetails, CredentialsContainer {
 
     @Override
     public boolean isEnabled() {
-        return user.getAccountDisabled() == SecurityFlag.ENABLED;
+        return user.getDisabled() == SecurityFlag.ENABLED;
     }
 
 }
