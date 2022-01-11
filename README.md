@@ -33,7 +33,7 @@ $ src/redis-server
 $ src/redis-cli
 
 # set up mysql
-mysql --host=localhost --user=root --password=19990707 bruincreates
+mysql --host=localhost --user=root --password=123456 bruincreates
 ```
 
 Alternatively you can use the [Spring Boot Maven plugin](https://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-maven-plugin.html) like so:
@@ -46,14 +46,24 @@ mvn spring-boot:run
 This project is secured using Spring Security and Spring Session Redis. Authentication is needed before accessing the server, for example:
 
 ```shell
-# login test user using postman
-request: post
-body: form-data (username=test, password=123456)
-url: localhost:8080/api/account/login
+# register user
+POST: localhost:8080/api/account/register
+body: json
+{
+  "username" : "test",
+  "password" : "test",
+  "profileName" : "test",
+  "email" : "some_real_email@gmail.com"
+}
 
-# try sample api
-request: get
-url: localhost:8080/api/test
+# login user
+POST: localhost:8080/api/account/login
+body: form-data
+username:test
+password:test
+
+# try sample query api
+GET: localhost:8080/api/test
 ```
 
 ## Copyright
