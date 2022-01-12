@@ -192,3 +192,268 @@ Caused by: java.net.ConnectException: Connection refused
 2022-01-11 15:37:02,516 [INFO] from org.apache.coyote.http11.Http11NioProtocol in restartedMain - Starting ProtocolHandler ["http-nio-8080"]
 2022-01-11 15:37:02,528 [INFO] from org.springframework.boot.web.embedded.tomcat.TomcatWebServer in restartedMain - Tomcat started on port(s): 8080 (http) with context path ''
 2022-01-11 15:37:02,532 [INFO] from com.bruincreates.server.ServerApplication in restartedMain - Started ServerApplication in 29.914 seconds (JVM running for 36.248)
+2022-01-11 15:47:48,918 [INFO] from org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor in SpringContextShutdownHook - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-11 15:48:14,516 [WARN] from org.springframework.boot.StartupInfoLogger in restartedMain - InetAddress.getLocalHost().getHostName() took 5003 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2022-01-11 15:48:19,526 [INFO] from com.bruincreates.server.ServerApplication in restartedMain - Starting ServerApplication on Aos-MacBook-Pro.local with PID 42969 (/Users/aojiao/BruinCreates/bruincreates-springboot-server/target/classes started by aojiao in /Users/aojiao/BruinCreates/bruincreates-springboot-server)
+2022-01-11 15:48:19,528 [INFO] from com.bruincreates.server.ServerApplication in restartedMain - No active profile set, falling back to default profiles: default
+2022-01-11 15:48:19,566 [INFO] from org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor in restartedMain - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-11 15:48:19,567 [INFO] from org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor in restartedMain - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-11 15:48:20,179 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate in restartedMain - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-11 15:48:20,180 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate in restartedMain - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-01-11 15:48:20,195 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate in restartedMain - Finished Spring Data repository scanning in 12ms. Found 0 Elasticsearch repository interfaces.
+2022-01-11 15:48:20,199 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate in restartedMain - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-11 15:48:20,200 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate in restartedMain - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-01-11 15:48:20,206 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate in restartedMain - Finished Spring Data repository scanning in 5ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-01-11 15:48:20,215 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate in restartedMain - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-11 15:48:20,216 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate in restartedMain - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-01-11 15:48:20,228 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate in restartedMain - Finished Spring Data repository scanning in 5ms. Found 0 Redis repository interfaces.
+2022-01-11 15:48:20,576 [INFO] from org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker in restartedMain - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-11 15:48:20,601 [INFO] from org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker in restartedMain - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-11 15:48:20,603 [INFO] from org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker in restartedMain - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4cbe436e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-11 15:48:20,604 [INFO] from org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker in restartedMain - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-11 15:48:20,607 [INFO] from org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker in restartedMain - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-11 15:48:20,943 [INFO] from org.springframework.boot.web.embedded.tomcat.TomcatWebServer in restartedMain - Tomcat initialized with port(s): 8080 (http)
+2022-01-11 15:48:20,949 [INFO] from org.apache.coyote.http11.Http11NioProtocol in restartedMain - Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-11 15:48:20,950 [INFO] from org.apache.catalina.core.StandardService in restartedMain - Starting service [Tomcat]
+2022-01-11 15:48:20,950 [INFO] from org.apache.catalina.core.StandardEngine in restartedMain - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2022-01-11 15:48:21,084 [INFO] from org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] in restartedMain - Initializing Spring embedded WebApplicationContext
+2022-01-11 15:48:21,085 [INFO] from org.springframework.web.context.ContextLoader in restartedMain - Root WebApplicationContext: initialization completed in 1518 ms
+2022-01-11 15:48:22,498 [INFO] from org.springframework.security.web.DefaultSecurityFilterChain in restartedMain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a1b0372, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a46de3e, org.springframework.security.web.header.HeaderWriterFilter@2da8ddef, org.springframework.web.filter.CorsFilter@b7c3ce2, org.springframework.security.web.authentication.logout.LogoutFilter@608c3dfa, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@293c1386, org.springframework.security.web.session.ConcurrentSessionFilter@604f7d28, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3eab8391, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4bab139c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c4640c5, org.springframework.security.web.session.SessionManagementFilter@7b95a124, org.springframework.security.web.access.ExceptionTranslationFilter@3eb86bda, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@22a69750]
+2022-01-11 15:48:22,572 [INFO] from io.lettuce.core.EpollProvider in restartedMain - Starting without optional epoll library
+2022-01-11 15:48:22,573 [INFO] from io.lettuce.core.KqueueProvider in restartedMain - Starting without optional kqueue library
+2022-01-11 15:48:27,723 [INFO] from org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor in restartedMain - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-11 15:48:28,184 [INFO] from org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer in restartedMain - LiveReload server is running on port 35729
+2022-01-11 15:48:28,770 [INFO] from org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor in restartedMain - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-01-11 15:48:28,776 [INFO] from org.apache.coyote.http11.Http11NioProtocol in restartedMain - Starting ProtocolHandler ["http-nio-8080"]
+2022-01-11 15:48:28,788 [INFO] from org.springframework.boot.web.embedded.tomcat.TomcatWebServer in restartedMain - Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-11 15:48:28,792 [INFO] from com.bruincreates.server.ServerApplication in restartedMain - Started ServerApplication in 29.642 seconds (JVM running for 35.641)
+2022-01-11 15:49:44,937 [INFO] from org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] in http-nio-8080-exec-2 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-11 15:49:44,940 [INFO] from org.springframework.web.servlet.DispatcherServlet in http-nio-8080-exec-2 - Initializing Servlet 'dispatcherServlet'
+2022-01-11 15:49:44,955 [INFO] from org.springframework.web.servlet.DispatcherServlet in http-nio-8080-exec-2 - Completed initialization in 15 ms
+2022-01-11 15:49:45,233 [INFO] from com.zaxxer.hikari.HikariDataSource in http-nio-8080-exec-2 - HikariPool-1 - Starting...
+2022-01-11 15:49:45,710 [INFO] from com.zaxxer.hikari.HikariDataSource in http-nio-8080-exec-2 - HikariPool-1 - Start completed.
+2022-01-11 15:49:45,759 [INFO] from com.bruincreates.server.service.UserDetailsService in http-nio-8080-exec-2 - [loadUserByUsername]: user doesn't exist for aojiao
+2022-01-11 15:49:45,811 [WARN] from com.bruincreates.server.security.LoginFailureHandler in http-nio-8080-exec-2 - Login failed: [/api/account/login], AuthenticationException={}
+org.springframework.security.authentication.BadCredentialsException: Bad credentials
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:151)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:195)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:95)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:141)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-01-11 15:49:49,723 [INFO] from com.bruincreates.server.service.UserDetailsService in http-nio-8080-exec-3 - [loadUserByUsername]: user doesn't exist for aojiao
+2022-01-11 15:49:49,788 [WARN] from com.bruincreates.server.security.LoginFailureHandler in http-nio-8080-exec-3 - Login failed: [/api/account/login], AuthenticationException={}
+org.springframework.security.authentication.BadCredentialsException: Bad credentials
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:151)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:195)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:95)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:141)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-01-11 15:50:00,298 [INFO] from com.bruincreates.server.service.UserDetailsService in http-nio-8080-exec-4 - [loadUserByUsername]: user doesn't exist for aojia
+2022-01-11 15:50:00,343 [WARN] from com.bruincreates.server.security.LoginFailureHandler in http-nio-8080-exec-4 - Login failed: [/api/account/login], AuthenticationException={}
+org.springframework.security.authentication.BadCredentialsException: Bad credentials
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:151)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:195)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:95)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:141)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-01-11 15:50:58,831 [INFO] from org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor in SpringContextShutdownHook - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-11 15:50:58,833 [INFO] from com.zaxxer.hikari.HikariDataSource in SpringContextShutdownHook - HikariPool-1 - Shutdown initiated...
+2022-01-11 15:50:58,843 [INFO] from com.zaxxer.hikari.HikariDataSource in SpringContextShutdownHook - HikariPool-1 - Shutdown completed.
+2022-01-11 15:51:23,721 [WARN] from org.springframework.boot.StartupInfoLogger in restartedMain - InetAddress.getLocalHost().getHostName() took 5001 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2022-01-11 15:51:28,727 [INFO] from com.bruincreates.server.ServerApplication in restartedMain - Starting ServerApplication on Aos-MacBook-Pro.local with PID 42999 (/Users/aojiao/BruinCreates/bruincreates-springboot-server/target/classes started by aojiao in /Users/aojiao/BruinCreates/bruincreates-springboot-server)
+2022-01-11 15:51:28,728 [INFO] from com.bruincreates.server.ServerApplication in restartedMain - No active profile set, falling back to default profiles: default
+2022-01-11 15:51:28,766 [INFO] from org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor in restartedMain - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-11 15:51:28,766 [INFO] from org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor in restartedMain - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-11 15:51:29,394 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate in restartedMain - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-11 15:51:29,395 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate in restartedMain - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-01-11 15:51:29,409 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate in restartedMain - Finished Spring Data repository scanning in 11ms. Found 0 Elasticsearch repository interfaces.
+2022-01-11 15:51:29,413 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate in restartedMain - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-11 15:51:29,413 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate in restartedMain - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-01-11 15:51:29,419 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate in restartedMain - Finished Spring Data repository scanning in 5ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-01-11 15:51:29,428 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate in restartedMain - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-11 15:51:29,429 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate in restartedMain - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-01-11 15:51:29,440 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate in restartedMain - Finished Spring Data repository scanning in 5ms. Found 0 Redis repository interfaces.
+2022-01-11 15:51:29,778 [INFO] from org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker in restartedMain - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-11 15:51:29,803 [INFO] from org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker in restartedMain - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-11 15:51:29,804 [INFO] from org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker in restartedMain - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@115e77e4' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-11 15:51:29,806 [INFO] from org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker in restartedMain - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-11 15:51:29,809 [INFO] from org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker in restartedMain - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-11 15:51:30,144 [INFO] from org.springframework.boot.web.embedded.tomcat.TomcatWebServer in restartedMain - Tomcat initialized with port(s): 8080 (http)
+2022-01-11 15:51:30,151 [INFO] from org.apache.coyote.http11.Http11NioProtocol in restartedMain - Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-11 15:51:30,151 [INFO] from org.apache.catalina.core.StandardService in restartedMain - Starting service [Tomcat]
+2022-01-11 15:51:30,151 [INFO] from org.apache.catalina.core.StandardEngine in restartedMain - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2022-01-11 15:51:30,285 [INFO] from org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] in restartedMain - Initializing Spring embedded WebApplicationContext
+2022-01-11 15:51:30,285 [INFO] from org.springframework.web.context.ContextLoader in restartedMain - Root WebApplicationContext: initialization completed in 1519 ms
+2022-01-11 15:51:31,739 [INFO] from org.springframework.security.web.DefaultSecurityFilterChain in restartedMain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a7d3b39, org.springframework.security.web.context.SecurityContextPersistenceFilter@25bcb800, org.springframework.security.web.header.HeaderWriterFilter@491ee894, org.springframework.web.filter.CorsFilter@341cb261, org.springframework.security.web.authentication.logout.LogoutFilter@564e881, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@33b16ca7, org.springframework.security.web.session.ConcurrentSessionFilter@38268821, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e53108c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@139aa867, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18ce560f, org.springframework.security.web.session.SessionManagementFilter@5632394, org.springframework.security.web.access.ExceptionTranslationFilter@2e36406d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14a1e614]
+2022-01-11 15:51:31,811 [INFO] from io.lettuce.core.EpollProvider in restartedMain - Starting without optional epoll library
+2022-01-11 15:51:31,812 [INFO] from io.lettuce.core.KqueueProvider in restartedMain - Starting without optional kqueue library
+2022-01-11 15:51:36,960 [INFO] from org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor in restartedMain - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-11 15:51:37,425 [INFO] from org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer in restartedMain - LiveReload server is running on port 35729
+2022-01-11 15:51:38,010 [INFO] from org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor in restartedMain - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2022-01-11 15:51:38,016 [INFO] from org.apache.coyote.http11.Http11NioProtocol in restartedMain - Starting ProtocolHandler ["http-nio-8080"]
+2022-01-11 15:51:38,028 [INFO] from org.springframework.boot.web.embedded.tomcat.TomcatWebServer in restartedMain - Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-11 15:51:38,031 [INFO] from com.bruincreates.server.ServerApplication in restartedMain - Started ServerApplication in 29.714 seconds (JVM running for 35.684)
+2022-01-11 15:51:50,863 [INFO] from org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] in http-nio-8080-exec-1 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-11 15:51:50,864 [INFO] from org.springframework.web.servlet.DispatcherServlet in http-nio-8080-exec-1 - Initializing Servlet 'dispatcherServlet'
+2022-01-11 15:51:50,870 [INFO] from org.springframework.web.servlet.DispatcherServlet in http-nio-8080-exec-1 - Completed initialization in 6 ms
+2022-01-11 15:51:51,303 [INFO] from com.zaxxer.hikari.HikariDataSource in http-nio-8080-exec-1 - HikariPool-1 - Starting...
+2022-01-11 15:51:51,663 [INFO] from com.zaxxer.hikari.HikariDataSource in http-nio-8080-exec-1 - HikariPool-1 - Start completed.

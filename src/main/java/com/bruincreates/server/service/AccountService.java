@@ -61,7 +61,7 @@ public class AccountService {
 
         //TODO: change to user email
         //TODO: improve speed by changing to asynchronous call
-        emailService.sendSimpleEmail("ocestarsan@gmail.com",
+        emailService.sendSimpleEmail(user.getEmail(),
                 "BruinCreates: Please Verify Your Email",
                 "Email Verification Link: " + verificationUrl);
     }
