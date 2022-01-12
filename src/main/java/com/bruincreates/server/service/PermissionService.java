@@ -14,7 +14,7 @@ public class PermissionService {
 
         UserControlBlock userControlBlock = ServletUtils.getCurrentPrincipal();
         User user = userControlBlock.getUser();
-        String userPermission = user.getRole() == 0 ? "user" : "admin";
+        String userPermission = user.getRole();
 
         if (userPermission.matches(permission)) {
             return true;

@@ -16,7 +16,6 @@ public class JwtUtil {
 
     public static String createToken(String username, String role) {
 
-
         Instant issuedAt = Instant.now().truncatedTo(ChronoUnit.SECONDS);
         Instant expiration = issuedAt.plus(1, ChronoUnit.DAYS);
 

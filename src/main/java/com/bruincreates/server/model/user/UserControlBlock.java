@@ -1,7 +1,6 @@
 package com.bruincreates.server.model.user;
 
 import com.bruincreates.server.dao.po.User;
-import com.bruincreates.server.model.security.SecurityFlag;
 import lombok.Data;
 import org.springframework.security.core.CredentialsContainer;
 import org.springframework.security.core.GrantedAuthority;
@@ -70,7 +69,7 @@ public class UserControlBlock implements UserDetails, CredentialsContainer {
 
     @Override
     public boolean isAccountNonLocked() {
-        return user.getLocked() == SecurityFlag.UN_LOCKED;
+        return !user.getLocked();
     }
 
     @Override
@@ -80,7 +79,7 @@ public class UserControlBlock implements UserDetails, CredentialsContainer {
 
     @Override
     public boolean isEnabled() {
-        return user.getDisabled() == SecurityFlag.ENABLED;
+        return !user.getDisabled();
     }
 
 }

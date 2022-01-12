@@ -1,6 +1,6 @@
 package com.bruincreates.server.controller;
 
-import com.bruincreates.server.model.servlet.RestResponse;
+import com.bruincreates.server.model.response.RestResponse;
 import com.bruincreates.server.service.RecommendationService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

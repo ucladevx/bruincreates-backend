@@ -1,7 +1,7 @@
 package com.bruincreates.server.controller;
 
-import com.bruincreates.server.model.servlet.RestResponse;
-import com.bruincreates.server.service.ShopService;
+import com.bruincreates.server.model.response.RestResponse;
+import com.bruincreates.server.service.ProductService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductController {
 
     @Autowired
-    ShopService shopService;
+    ProductService productService;
 
     @GetMapping("/test")
-    public RestResponse<String> shopTest() {
+    public RestResponse<String> test() {
         return RestResponse.success();
     }
 

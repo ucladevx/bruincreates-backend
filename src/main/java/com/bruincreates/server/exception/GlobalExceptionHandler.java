@@ -1,7 +1,7 @@
 package com.bruincreates.server.exception;
 
-import com.bruincreates.server.model.servlet.ResponseCode;
-import com.bruincreates.server.model.servlet.RestResponse;
+import com.bruincreates.server.model.response.ResponseCode;
+import com.bruincreates.server.model.response.RestResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

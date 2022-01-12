@@ -1,4 +1,4 @@
-package com.bruincreates.server.model.servlet;
+package com.bruincreates.server.model.response;
 
 /**
  * @author aojiao

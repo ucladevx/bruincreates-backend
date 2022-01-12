@@ -1,7 +1,7 @@
 package com.bruincreates.server.security;
 
-import com.bruincreates.server.model.servlet.ResponseCode;
-import com.bruincreates.server.model.servlet.RestResponse;
+import com.bruincreates.server.model.response.ResponseCode;
+import com.bruincreates.server.model.response.RestResponse;
 import com.bruincreates.server.utility.ServletUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.web.session.InvalidSessionStrategy;

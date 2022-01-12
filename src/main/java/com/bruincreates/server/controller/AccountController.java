@@ -2,7 +2,7 @@ package com.bruincreates.server.controller;
 
 import com.bruincreates.server.exception.BadRequestException;
 import com.bruincreates.server.model.request.RegistrationRequest;
-import com.bruincreates.server.model.servlet.RestResponse;
+import com.bruincreates.server.model.response.RestResponse;
 import com.bruincreates.server.model.user.UserControlBlock;
 import com.bruincreates.server.service.AccountService;
 import com.bruincreates.server.utility.JwtUtil;

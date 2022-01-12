@@ -1,7 +1,7 @@
 package com.bruincreates.server.controller;
 
-import com.bruincreates.server.model.servlet.RestResponse;
-import com.bruincreates.server.service.ReviewService;
+import com.bruincreates.server.model.response.RestResponse;
+import com.bruincreates.server.service.ProductReviewService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequestMapping("/api/review")
-public class ReviewController {
+public class ProductReviewController {
 
     @Autowired
-    ReviewService reviewService;
+    ProductReviewService productReviewService;
 
     @GetMapping("/test")
     @PreAuthorize("@ps.permission('user|admin')")
