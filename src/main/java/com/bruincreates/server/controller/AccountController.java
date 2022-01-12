@@ -1,6 +1,8 @@
 package com.bruincreates.server.controller;
 
 import com.bruincreates.server.exception.BadRequestException;
+import com.bruincreates.server.model.request.PasswordResetRequest;
+import com.bruincreates.server.model.request.PasswordResetUrlRequest;
 import com.bruincreates.server.model.request.RegistrationRequest;
 import com.bruincreates.server.model.response.RestResponse;
 import com.bruincreates.server.model.user.UserControlBlock;
@@ -40,19 +42,21 @@ public class AccountController {
     }
 
     @PostMapping("/sendResetUrl")
-    public RestResponse<String> sendPasswordResetUrl() {
+    public RestResponse<String> sendPasswordResetUrl(@Valid @RequestBody PasswordResetUrlRequest request) throws BadRequestException {
         //get username, get email
         //send link (generate jwt + url)
         //and return
+        accountService.sendPasswordResetURL(request);
         return RestResponse.success("Password Reset Link Sent");
     }
 
     @PostMapping("/resetPassword")
-    public RestResponse<String> resetPassword() {
+    public RestResponse<String> resetPassword(@RequestBody PasswordResetRequest request) throws BadRequestException {
         //get password, jwt
         //get username from jwt
         //update username, password
         //and return
+        accountService.resetPassword(request);
         return RestResponse.success("Password Reset Succeed");
     }
 

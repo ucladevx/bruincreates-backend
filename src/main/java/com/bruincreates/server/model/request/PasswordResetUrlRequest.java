@@ -1,6 +1,12 @@
 package com.bruincreates.server.model.request;
 
-public class PasswordResetUrlRequest {
-    String username;
+import lombok.Data;
+
+import javax.validation.constraints.NotNull;
+
+@Data
+
+public class PasswordResetUrlRequest{
+    @NotNull
     String email;
 }
