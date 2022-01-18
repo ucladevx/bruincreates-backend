@@ -1,0 +1,1190 @@
+2022-01-17 00:12:25,840 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was /127.0.0.1:6379
+2022-01-17 00:12:25,840 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was /127.0.0.1:6379
+2022-01-17 00:12:26,874 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:12:26,874 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:12:31,326 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:12:31,326 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:12:32,330 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:12:32,330 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:12:36,526 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:12:36,526 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:12:37,530 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:12:37,530 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:12:41,731 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:12:41,731 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:12:42,735 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:12:42,735 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:12:46,926 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:12:46,926 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:12:47,929 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:12:47,929 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:12:56,131 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:12:56,131 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:12:57,134 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:12:57,135 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:13:13,529 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:13:13,530 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:13:14,537 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:13:14,539 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:13:44,627 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:13:44,627 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:13:45,634 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:13:45,634 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:14:00,021 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:114)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+2022-01-17 00:14:15,727 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:14:15,727 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:14:16,732 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:14:16,732 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:14:46,827 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:14:46,827 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:14:47,834 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:14:47,835 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:15:17,930 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:15:17,930 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:15:18,935 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:15:18,935 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:15:49,032 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:15:49,032 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:15:50,037 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:15:50,037 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:16:00,003 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:114)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+2022-01-17 00:16:20,129 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:16:20,129 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:16:21,134 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:16:21,134 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:16:51,232 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:16:51,233 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:16:52,236 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:16:52,236 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:17:22,329 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:17:22,329 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:17:23,333 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:17:23,333 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:17:53,430 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:17:53,430 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:17:54,438 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:17:54,440 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:18:00,006 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:114)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+2022-01-17 00:18:24,531 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:18:24,531 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:18:25,534 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:18:25,534 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:18:55,636 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:18:55,636 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:18:56,642 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:18:56,642 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:19:26,734 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:19:26,734 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:19:27,737 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:19:27,737 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:19:57,832 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:19:57,832 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:19:58,836 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:19:58,836 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:20:00,004 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:114)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+2022-01-17 00:20:28,932 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:20:28,932 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:20:29,936 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:20:29,936 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:21:00,035 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:21:00,035 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:21:01,039 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:21:01,039 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:21:31,138 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:21:31,138 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:21:32,141 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:21:32,141 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:22:00,005 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:114)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+2022-01-17 00:22:02,237 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:22:02,237 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:22:03,240 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:22:03,240 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:22:33,334 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:22:33,334 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:22:34,339 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:22:34,339 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:23:04,437 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:23:04,437 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:23:05,440 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:23:05,440 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:23:35,535 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:23:35,535 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:23:36,540 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:23:36,540 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:23:59,997 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:114)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+2022-01-17 00:24:06,626 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:24:06,626 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:24:07,629 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:24:07,629 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:24:49,180 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:24:49,180 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:24:50,184 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:24:50,185 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:25:11,459 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:126)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.protocol.CommandExpiryWriter.lambda$potentiallyExpire$0(CommandExpiryWriter.java:167)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:66)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2022-01-17 00:25:20,279 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:25:20,279 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:25:21,282 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:25:21,282 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:25:51,383 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:25:51,383 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:25:52,386 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:25:52,386 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:26:22,511 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:26:22,511 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:26:23,514 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:26:23,514 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:26:53,580 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:26:53,580 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:26:54,583 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:26:54,583 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:27:00,007 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:114)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+2022-01-17 00:27:24,683 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:27:24,684 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:27:25,686 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:27:25,686 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:27:55,781 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:27:55,781 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:27:56,784 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:27:56,784 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:28:26,883 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:28:26,883 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:28:27,890 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:28:27,890 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:28:57,984 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:28:57,984 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:28:58,986 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:28:58,986 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:29:00,007 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:126)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.protocol.CommandExpiryWriter.lambda$potentiallyExpire$0(CommandExpiryWriter.java:167)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:66)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2022-01-17 00:29:29,082 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:29:29,082 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:29:30,087 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:29:30,087 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:30:00,182 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:30:00,182 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:30:01,184 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:30:01,184 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:30:31,334 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:30:31,334 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:30:32,336 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:30:32,336 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:31:00,003 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:126)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.protocol.CommandExpiryWriter.lambda$potentiallyExpire$0(CommandExpiryWriter.java:167)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:66)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2022-01-17 00:31:02,386 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:31:02,387 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:31:03,414 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:31:03,415 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:31:33,484 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:31:33,484 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:31:34,488 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:31:34,488 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:32:04,586 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:32:04,586 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:32:05,589 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:32:05,589 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:32:35,685 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:32:35,685 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:32:36,688 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:32:36,688 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:33:00,006 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:114)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+2022-01-17 00:33:06,786 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:33:06,786 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:33:07,788 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:33:07,788 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:33:37,885 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:33:37,885 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:33:38,895 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:33:38,895 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:34:08,989 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:34:08,989 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:34:09,992 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:34:09,992 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:34:40,089 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:34:40,089 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:34:41,093 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:34:41,093 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:35:00,007 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:114)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+2022-01-17 00:35:11,186 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:35:11,186 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:35:12,190 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:35:12,190 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:35:42,287 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:35:42,287 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:35:43,292 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:35:43,292 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:36:13,391 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:36:13,391 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:36:14,395 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:36:14,395 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:36:44,488 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:36:44,488 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:36:45,492 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:36:45,492 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:37:00,009 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:114)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+2022-01-17 00:37:15,612 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:37:15,612 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:37:16,636 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:37:16,636 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:37:46,690 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:37:46,691 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:37:47,694 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:37:47,694 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:38:17,791 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:38:17,791 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:38:18,793 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:38:18,793 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:38:48,893 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:38:48,893 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:38:49,897 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:38:49,897 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:39:00,011 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:114)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+2022-01-17 00:39:19,989 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:39:19,990 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:39:20,995 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:39:20,995 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:39:51,093 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:39:51,093 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:39:52,097 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:39:52,097 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:40:22,191 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:40:22,191 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:40:23,197 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:40:23,198 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:40:53,292 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:40:53,292 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:40:54,296 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:40:54,297 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:41:00,010 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:114)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+2022-01-17 00:41:24,395 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:41:24,395 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:41:25,401 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:41:25,401 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:41:55,490 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:41:55,491 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:41:56,495 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:41:56,495 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:42:26,606 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:42:26,606 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:42:27,613 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:42:27,613 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:46:15,975 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:46:15,975 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:46:16,983 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:46:16,983 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:46:18,292 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:114)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+2022-01-17 00:46:20,417 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-1 housekeeper - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m48s273ms).
+2022-01-17 00:46:47,080 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:46:47,080 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:46:48,086 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:46:48,087 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:47:18,175 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:47:18,175 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:47:19,178 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:47:19,178 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:47:49,278 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:47:49,278 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:47:50,286 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:47:50,286 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:48:00,003 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:126)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.protocol.CommandExpiryWriter.lambda$potentiallyExpire$0(CommandExpiryWriter.java:167)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:66)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2022-01-17 00:48:20,378 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:48:20,378 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:48:21,382 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:48:21,382 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 00:48:51,516 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 00:48:51,516 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:01:19,012 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:01:19,012 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:01:46,396 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-1 housekeeper - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m55s931ms).
+2022-01-17 01:01:49,047 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:01:49,047 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:01:50,050 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:01:50,050 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:09:25,699 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-1 housekeeper - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m39s304ms).
+2022-01-17 01:09:29,441 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:09:29,441 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:09:30,444 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:09:30,444 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:09:35,262 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:114)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+2022-01-17 01:10:01,552 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:10:01,552 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:10:02,558 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:10:02,558 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:24:09,815 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-1 housekeeper - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m13s98ms).
+2022-01-17 01:24:15,734 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:24:15,734 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:24:16,738 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:24:16,738 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:41:27,005 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:114)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+2022-01-17 01:41:29,257 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:41:29,257 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:41:30,917 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:41:30,917 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:41:52,899 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-1 housekeeper - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m13s80ms).
+2022-01-17 01:42:01,015 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:42:01,015 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:42:02,018 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:42:02,018 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:43:13,120 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-1 housekeeper - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m20s221ms).
+2022-01-17 01:43:22,329 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:43:22,329 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:43:23,336 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:43:23,336 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:43:50,878 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:126)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.protocol.CommandExpiryWriter.lambda$potentiallyExpire$0(CommandExpiryWriter.java:167)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:66)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2022-01-17 01:43:53,428 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:43:53,428 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:43:54,431 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:43:54,431 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:44:01,227 [WARN] from com.bruincreates.server.security.LoginFailureHandler in http-nio-8080-exec-7 - Login failed: [/api/account/login], AuthenticationException={}
+org.springframework.security.authentication.BadCredentialsException: Bad credentials
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:93)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:195)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:95)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:141)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-01-17 01:44:24,531 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:44:24,531 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:44:25,537 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:44:25,537 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:44:55,632 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-3 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:44:55,632 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-4 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:44:56,637 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-4 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:44:56,637 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-3 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:45:00,009 [ERROR] from org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler in pool-2-thread-1 - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis command timed out; nested exception is io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:70)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:270)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.convertLettuceAccessException(LettuceSetCommands.java:520)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:245)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.sMembers(DefaultedRedisConnection.java:729)
+	at org.springframework.data.redis.core.DefaultSetOperations.lambda$members$10(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:214)
+	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152)
+	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:129)
+	at org.springframework.session.data.redis.RedisIndexedSessionRepository.cleanupExpiredSessions(RedisIndexedSessionRepository.java:407)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:114)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy101.smembers(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSetCommands.sMembers(LettuceSetCommands.java:243)
+	... 18 common frames omitted
+2022-01-17 01:45:26,729 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-2 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:45:26,729 [INFO] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-eventExecutorLoop-1-1 - Reconnecting, last destination was 127.0.0.1:6379
+2022-01-17 01:45:27,733 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-1 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:45:27,733 [WARN] from io.lettuce.core.protocol.ConnectionWatchdog in lettuce-nioEventLoop-4-2 - Cannot reconnect to [127.0.0.1:6379]: Connection refused: /127.0.0.1:6379
+2022-01-17 01:45:49,875 [WARN] from org.springframework.data.redis.listener.RedisMessageListenerContainer in SpringContextShutdownHook - Unable to unsubscribe from subscriptions
+io.lettuce.core.RedisCommandTimeoutException: Command timed out after 1 minute(s)
+	at io.lettuce.core.ExceptionFactory.createTimeoutException(ExceptionFactory.java:51)
+	at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:114)
+	at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:69)
+	at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:80)
+	at com.sun.proxy.$Proxy110.unsubscribe(Unknown Source)
+	at org.springframework.data.redis.connection.lettuce.LettuceSubscription.doUnsubscribe(LettuceSubscription.java:114)
+	at org.springframework.data.redis.connection.lettuce.LettuceSubscription.doClose(LettuceSubscription.java:70)
+	at org.springframework.data.redis.connection.util.AbstractSubscription.close(AbstractSubscription.java:106)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer$SubscriptionTask.cancel(RedisMessageListenerContainer.java:866)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.stop(RedisMessageListenerContainer.java:225)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.stop(RedisMessageListenerContainer.java:183)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:238)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$300(DefaultLifecycleProcessor.java:53)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:377)
+	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:210)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:128)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1021)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:948)
+2022-01-17 01:45:49,975 [INFO] from org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor in SpringContextShutdownHook - Shutting down ExecutorService 'asyncServiceExecutor'
+2022-01-17 01:45:49,981 [INFO] from com.zaxxer.hikari.HikariDataSource in SpringContextShutdownHook - HikariPool-1 - Shutdown initiated...
+2022-01-17 01:45:49,996 [INFO] from com.zaxxer.hikari.HikariDataSource in SpringContextShutdownHook - HikariPool-1 - Shutdown completed.

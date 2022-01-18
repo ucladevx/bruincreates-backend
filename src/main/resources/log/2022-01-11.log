@@ -5469,3 +5469,6 @@ org.springframework.security.authentication.InsufficientAuthenticationException:
 2022-01-11 23:22:35,235 [INFO] from com.bruincreates.server.security.RestHttpSessionIdResolver in http-nio-8080-exec-9 - BruinCreatesSessionId=81549bd2-c33a-40ba-ae25-f78dfef006ef
 2022-01-11 23:22:37,790 [INFO] from com.bruincreates.server.security.LoginSuccessHandler in http-nio-8080-exec-10 - Login succeed: [aojiao@g.ucla.edu]
 2022-01-11 23:22:37,799 [INFO] from com.bruincreates.server.security.RestHttpSessionIdResolver in http-nio-8080-exec-10 - BruinCreatesSessionId=5bfad6cd-d7a1-44ad-957e-5a01f991de12
+2022-01-11 23:23:47,233 [INFO] from org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor in SpringContextShutdownHook - Shutting down ExecutorService 'asyncServiceExecutor'
+2022-01-11 23:23:47,233 [INFO] from com.zaxxer.hikari.HikariDataSource in SpringContextShutdownHook - HikariPool-1 - Shutdown initiated...
+2022-01-11 23:23:47,246 [INFO] from com.zaxxer.hikari.HikariDataSource in SpringContextShutdownHook - HikariPool-1 - Shutdown completed.
