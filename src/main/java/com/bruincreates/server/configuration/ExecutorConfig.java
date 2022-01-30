@@ -26,6 +26,7 @@ public class ExecutorConfig {
     @Value("${async.executor.thread.name.prefix}")
     private String namePrefix;
 
+    
     @Bean(name = "asyncServiceExecutor")
     public Executor asyncServiceExecutor() {
         log.info("Start SpringBoot Thread Pool");

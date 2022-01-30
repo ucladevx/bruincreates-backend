@@ -49,17 +49,23 @@ create table if not exists `product_review` (
 ) engine = InnoDB default charset = utf8mb4;
 
 create table if not exists `order` (
-    `id`                int(11) not null auto_increment,
-    `order_id`          varchar(32) not null unique,
-    `product_id`        varchar(32) not null,
-    `buyer`             varchar(32) not null,
-    `seller`            varchar(32) not null,
-    `status`            enum('created', 'paid','shipped','completed', 'cancelled'),
-    index(order_id),
+    `id`               int unsigned auto_increment comment 'primary key',
+    `transaction_id`   varchar(200) not null unique comment 'id with business meaning',
+    `buyer`            varchar(32) not null,
+    `seller`           varchar(32) not null,
+    `type`             tinyint unsigned not null comment 'type：1:item，2:service',
+    `status`           tinyint unsigned not null comment 'status：1:created, 2:paid, 3:shipped, 4:completed, 5:cancelled',
+    `shipping`         decimal(10, 2) unsigned not null default 0.00 comment 'delivery fee',
+    `total`            decimal(10, 2) unsigned not null comment 'total charge',
+    `create_time`      timestamp not null default now(),
+    index idx_code (`transaction_id`),
+    index idx_buyer_id (buyer),
+    index idx_seller_id (seller),
+    index idx_type (type),
+    index idx_status (`status`),
+    index idx_create_time (create_time),
     primary key (`id`)
 ) engine = InnoDB default charset = utf8mb4;
-
-
 
 
 
