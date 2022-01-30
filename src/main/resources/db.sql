@@ -50,7 +50,7 @@ create table if not exists `product_review` (
 
 create table if not exists `order` (
     `id`               int unsigned auto_increment comment 'primary key',
-    `transaction_id`   varchar(200) not null unique comment 'id with business meaning',
+    `order_id`   varchar(200) not null unique comment 'id with business meaning',
     `buyer`            varchar(32) not null,
     `seller`           varchar(32) not null,
     `type`             tinyint unsigned not null comment 'type：1:item，2:service',
@@ -58,7 +58,7 @@ create table if not exists `order` (
     `shipping`         decimal(10, 2) unsigned not null default 0.00 comment 'delivery fee',
     `total`            decimal(10, 2) unsigned not null comment 'total charge',
     `create_time`      timestamp not null default now(),
-    index idx_code (`transaction_id`),
+    index idx_code (`order_id`),
     index idx_buyer_id (buyer),
     index idx_seller_id (seller),
     index idx_type (type),

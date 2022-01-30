@@ -28,16 +28,6 @@ public class TestController {
         UserControlBlock user = (UserControlBlock) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         String username = user.getUser().getUsername();
         String email = user.getUser().getEmail();
-
-        Order order = new Order();
-        order.setTransactionId("1");
-        order.setBuyer("A");
-        order.setSeller("J");
-        order.setType((byte) 1);
-        order.setStatus((byte) 1);
-        order.setTotal(BigDecimal.valueOf(12.02));
-        order.setShipping(BigDecimal.valueOf(30.02));
-        orderMapper.insertSelective(order);
         return RestResponse.success();
     }
 
