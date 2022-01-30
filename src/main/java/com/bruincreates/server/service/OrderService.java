@@ -2,6 +2,7 @@ package com.bruincreates.server.service;
 
 import com.bruincreates.server.dao.mapper.OrderMapper;
 import com.bruincreates.server.dao.po.Order;
+import com.bruincreates.server.dao.po.OrderExample;
 import com.bruincreates.server.dao.po.Product;
 import com.bruincreates.server.exception.BadRequestException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,4 +44,25 @@ public class OrderService {
         return order;
     }
 
+    @Transactional
+    public Order cancelOrder(String buyer, String orderId) throws BadRequestException {
+        OrderExample orderExample = new OrderExample();
+        orderExample.createCriteria().andOrderIdEqualTo(orderId);
+
+        Order order = orderMapper.selectByExample(orderExample).get(0);
+
+        // under assumption that buyer id == buyer username
+        // check if current user = buyer of the order
+        if(buyer.equals(order.getBuyerId()) == false)
+            throw new BadRequestException("current user does not match buyer of the order");
+        // if order status is "shipped" or "completed", do not allow order cancellation
+        else if (order.getOrderStatus() == (byte) 3 || order.getOrderStatus() == (byte) 4)
+            throw new BadRequestException("order status is \"shipped\" or \"completed\", order cancellation not allowed");
+
+        order.setOrderStatus((byte) 5);
+        order.setDeleted(true);
+
+        orderMapper.updateByPrimaryKey(order);
+        return order;
+    }
 }
