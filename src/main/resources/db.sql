@@ -62,6 +62,7 @@ create table if not exists `order` (
     `shipping_charge`  decimal(10, 2) unsigned not null default 0.00 comment 'delivery charge',
     `total_charge`     decimal(10, 2) unsigned not null comment 'total charge',
     `date_created`     datetime not null default current_timestamp,
+    `deleted`             boolean default false,
     index idx_order_id (`order_id`),
     index idx_buyer_id (`buyer_id`),
     index idx_seller_id (`seller_id`),
