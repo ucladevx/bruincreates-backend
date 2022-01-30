@@ -28,52 +28,48 @@ public class AccountService {
     EmailService emailService;
 
     public User findUserByUsername(String username) {
-
         UserExample userExample = new UserExample();
         userExample.createCriteria().andUsernameEqualTo(username);
         List<User> userList = userMapper.selectByExample(userExample);
-
         return userList != null ? userList.size() > 0 ? userList.get(0) : null : null;
-
     }
 
     public void register(RegistrationRequest request) throws BadRequestException {
-
+        //validate email
         boolean validEmail = EmailValidator.getInstance().isValid(request.getEmail());
         if (!validEmail) {
-            throw new BadRequestException("Wrong Email Format");
+            throw new BadRequestException("wrong email format");
         }
 
+        //construct user object
         User user = new User();
         user.setUsername(request.getUsername());
         user.setPassword(passwordEncoder.encode(request.getPassword()));
         user.setEmail(request.getEmail());
         user.setProfileName(request.getProfileName());
 
+        //create user
         try {
             userMapper.insertSelective(user);
         } catch (Exception e) {
-            throw new BadRequestException("Duplicate Username or Email");
+            throw new BadRequestException("duplicate username or email");
         }
 
+        //generate jwt token
         String jwt = JwtUtil.createToken(user.getUsername(), "user");
         String verificationUrl = "localhost:8080/api/account/verifyEmail?jwt=" + jwt;
 
-        //TODO: change to user email
-        //TODO: improve speed by changing to asynchronous call
+        //send verification email
         emailService.sendSimpleEmail(user.getEmail(),
                 "BruinCreates: Please Verify Your Email",
                 "Email Verification Link: " + verificationUrl);
     }
 
     public void verifyEmail(String username) {
-
         UserExample userExample = new UserExample();
         userExample.createCriteria().andUsernameEqualTo(username);
-
         User user = new User();
         user.setVerified(true);
-
         userMapper.updateByExampleSelective(user, userExample);
     }
 

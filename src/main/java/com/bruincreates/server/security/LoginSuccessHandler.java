@@ -16,12 +16,12 @@ import java.io.IOException;
 public class LoginSuccessHandler implements AuthenticationSuccessHandler {
 
     @Override
-    public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Authentication authentication) throws IOException {
+    public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException {
         log.info("Login succeed: [{}]", authentication.getName());
-        httpServletResponse.setHeader("Access-Control-Allow-Origin", "*");
-        httpServletResponse.setHeader("Access-Control-Allow-Headers", "token, Accept, Origin, X-Requested-With, Content-Type, Last-Modified");
-        httpServletResponse.setHeader("Content-type", "application/json;charset=UTF-8");
-        ServletUtils.render(httpServletRequest, httpServletResponse, RestResponse.success(authentication));
+        response.setHeader("Access-Control-Allow-Origin", "*");
+        response.setHeader("Access-Control-Allow-Headers", "token, Accept, Origin, X-Requested-With, Content-Type, Last-Modified");
+        response.setHeader("Content-type", "application/json;charset=UTF-8");
+        ServletUtils.render(request, response, RestResponse.success(authentication));
     }
 
 }

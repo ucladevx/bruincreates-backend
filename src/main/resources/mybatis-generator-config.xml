@@ -71,7 +71,7 @@
 
         <!-- TODO: modify [tableName] and [domainObjectName] to generate mappers -->
         <!-- TODO: example: tableName="some_mysql_table" domainObjectName="SomeMySqlTable" -->
-        <table schema="" tableName="order" domainObjectName="Order"
+        <table schema="" tableName="product_review" domainObjectName="ProductReview"
                enableCountByExample="false" enableDeleteByExample="true" enableSelectByExample="true"
                enableUpdateByExample="true" selectByExampleQueryId="false">
             <!-- option for using original column name, default false -->

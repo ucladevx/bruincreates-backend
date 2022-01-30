@@ -1,10 +1,7 @@
 package com.bruincreates.server.exception;
 
-import com.bruincreates.server.model.response.ResponseCode;
 import com.bruincreates.server.model.response.RestResponse;
 import org.springframework.http.HttpStatus;
-import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -29,29 +26,14 @@ public class GlobalExceptionHandler {
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ResponseBody
     public RestResponse<String> exceptionHandler(BadRequestException e) {
-        return RestResponse.fail(ResponseCode.BAD_REQUEST, e.getMessage());
-    }
-
-    @ExceptionHandler(BadCredentialsException.class)
-    @ResponseStatus(HttpStatus.FORBIDDEN)
-    @ResponseBody
-    public RestResponse<String> exceptionHandler(BadCredentialsException e) {
-        return RestResponse.fail(ResponseCode.NOT_AUTHORIZED, e.getMessage());
-    }
-
-
-    @ExceptionHandler(UsernameNotFoundException.class)
-    @ResponseStatus(HttpStatus.BAD_REQUEST)
-    @ResponseBody
-    public RestResponse<String> exceptionHandler(UsernameNotFoundException e) {
-        return RestResponse.fail(ResponseCode.USER_NOT_EXIST, e.getMessage());
+        return RestResponse.fail(e.message);
     }
 
     @ExceptionHandler(Exception.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ResponseBody
     public RestResponse<String> exceptionHandler(Exception e) {
-        return RestResponse.fail(ResponseCode.FAIL);
+        return RestResponse.fail(e.getMessage());
     }
 
 }

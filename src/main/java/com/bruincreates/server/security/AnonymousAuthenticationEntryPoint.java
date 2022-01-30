@@ -1,6 +1,5 @@
 package com.bruincreates.server.security;
 
-import com.bruincreates.server.model.response.ResponseCode;
 import com.bruincreates.server.model.response.RestResponse;
 import com.bruincreates.server.utility.ServletUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -17,9 +16,9 @@ import java.io.IOException;
 public class AnonymousAuthenticationEntryPoint implements AuthenticationEntryPoint {
 
     @Override
-    public void commence(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AuthenticationException e) throws IOException {
-        log.warn("Login required: [{}], AuthenticationException={}", httpServletRequest.getRequestURI(), e);
-        ServletUtils.render(httpServletRequest, httpServletResponse, RestResponse.fail(ResponseCode.USER_NEED_LOGIN));
+    public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException e) throws IOException {
+        log.warn("Login required: [{}], AuthenticationException={}", request.getRequestURI(), e);
+        ServletUtils.render(request, response, RestResponse.fail("login required"));
     }
 
 }

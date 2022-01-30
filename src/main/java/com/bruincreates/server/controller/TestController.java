@@ -1,7 +1,6 @@
 package com.bruincreates.server.controller;
 
 import com.bruincreates.server.dao.mapper.OrderMapper;
-import com.bruincreates.server.dao.po.Order;
 import com.bruincreates.server.model.response.RestResponse;
 import com.bruincreates.server.model.user.UserControlBlock;
 import lombok.extern.slf4j.Slf4j;
@@ -11,8 +10,6 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.math.BigDecimal;
 
 @Slf4j
 @RestController
