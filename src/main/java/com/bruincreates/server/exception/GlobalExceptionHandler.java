@@ -26,7 +26,7 @@ public class GlobalExceptionHandler {
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ResponseBody
     public RestResponse<String> exceptionHandler(BadRequestException e) {
-        return RestResponse.fail(e.message);
+        return RestResponse.fail(e.message == null || e.message.length() < 1 ? "bad request" : e.message);
     }
 
     @ExceptionHandler(Exception.class)

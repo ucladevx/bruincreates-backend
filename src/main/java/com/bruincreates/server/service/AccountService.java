@@ -4,6 +4,8 @@ import com.bruincreates.server.dao.mapper.UserMapper;
 import com.bruincreates.server.dao.po.User;
 import com.bruincreates.server.dao.po.UserExample;
 import com.bruincreates.server.exception.BadRequestException;
+import com.bruincreates.server.model.request.PasswordResetRequest;
+import com.bruincreates.server.model.request.PasswordResetUrlRequest;
 import com.bruincreates.server.model.request.RegistrationRequest;
 import com.bruincreates.server.utility.JwtUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -30,6 +32,13 @@ public class AccountService {
     public User findUserByUsername(String username) {
         UserExample userExample = new UserExample();
         userExample.createCriteria().andUsernameEqualTo(username);
+        List<User> userList = userMapper.selectByExample(userExample);
+        return userList != null ? userList.size() > 0 ? userList.get(0) : null : null;
+    }
+
+    public User findUserByEmail(String email) {
+        UserExample userExample = new UserExample();
+        userExample.createCriteria().andEmailEqualTo(email);
         List<User> userList = userMapper.selectByExample(userExample);
         return userList != null ? userList.size() > 0 ? userList.get(0) : null : null;
     }
@@ -73,4 +82,40 @@ public class AccountService {
         userMapper.updateByExampleSelective(user, userExample);
     }
 
+    public void sendPasswordResetURL(PasswordResetUrlRequest request) throws BadRequestException{
+        //validate email
+        boolean validEmail = EmailValidator.getInstance().isValid(request.getEmail());
+        if (!validEmail) {
+            throw new BadRequestException("wrong email format");
+        }
+
+        //valid user exists
+        User user = findUserByEmail(request.getEmail());
+        if (user == null) {
+            throw new BadRequestException("user not found");
+        }
+
+        //generate jwt token
+        String jwt = JwtUtil.createToken(user.getUsername(), "user");
+        String passwordResetUrl = "localhost:3000/reset/" + jwt;
+
+        //send reset url
+        emailService.sendSimpleEmail(request.getEmail(),
+                "BruinCreates: Please click on the link to reset your password.",
+                "Password Reset Link: " + passwordResetUrl);
+    }
+
+    public void resetPassword(PasswordResetRequest request) throws BadRequestException{
+        //parse jwt
+        String jwt=request.getJwt();
+        String password=request.getPassword();
+        String username=JwtUtil.parseToken(jwt);
+
+        //update password
+        UserExample userExample = new UserExample();
+        userExample.createCriteria().andUsernameEqualTo(username);
+        User user = new User();
+        user.setPassword(passwordEncoder.encode(password));
+        userMapper.updateByExampleSelective(user, userExample);
+    }
 }
