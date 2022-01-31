@@ -21,45 +21,56 @@ create table if not exists `user` (
 ) engine = InnoDB default charset = utf8mb4;
 
 create table if not exists `product` (
-    `id`                int(11) not null auto_increment,
-    `type`              enum('item', 'service'),
-    `product_id`        varchar(32) not null unique,
-    `seller`            varchar(32) not null,
-    `title`             varchar(32) not null,
-    `category`          varchar(32) not null,
-    `keywords`          varchar(64) not null,
-    `description`       varchar(512) not null,
-    `images`            varchar(512) not null,
-    `stock`             int(11) not null,
-    `price`             int(11) not null,
-    `date_created`      datetime not null default current_timestamp,
-    `deleted`           boolean default false,
-    index(product_id),
+    `id`                  int(11) not null auto_increment,
+    `product_id`          varchar(32) not null unique,
+    `seller_id`           varchar(32) not null,
+    `product_type`        tinyint unsigned not null comment 'type：1:item，2:service',
+    `product_title`       varchar(32) not null,
+    `product_category`    varchar(32) not null,
+    `keywords`            varchar(64) not null,
+    `product_description` varchar(512) not null,
+    `product_images`      varchar(512) not null,
+    `product_stock`       int(11) not null,
+    `product_price`       decimal(10, 2) unsigned not null comment 'price',
+    `date_created`        datetime not null default current_timestamp,
+    `deleted`             boolean default false,
+    index idx_product_id (`product_id`),
+    index idx_product_type (`product_type`),
     primary key (`id`)
 ) engine = InnoDB default charset = utf8mb4;
 
 create table if not exists `product_review` (
     `id`                  int(11) not null auto_increment,
+    `buyer_id`            varchar(32) not null,
     `product_id`          varchar(32) not null,
-    `reviewer`            varchar(32) not null,
-    `review`              varchar(512) not null,
+    `product_review`      varchar(512) not null,
     `date_created`        datetime not null default current_timestamp,
     `deleted`             boolean default false,
+    index idx_product_id (`product_id`),
+    index idx_create_time (`date_created`),
     primary key (`id`)
 ) engine = InnoDB default charset = utf8mb4;
 
 create table if not exists `order` (
-    `id`                int(11) not null auto_increment,
-    `order_id`          varchar(32) not null unique,
-    `product_id`        varchar(32) not null,
-    `buyer`             varchar(32) not null,
-    `seller`            varchar(32) not null,
-    `status`            enum('created', 'paid','shipped','completed', 'cancelled'),
-    index(order_id),
+    `id`               int unsigned auto_increment comment 'primary key',
+    `order_id`         varchar(200) not null unique comment 'id with business meaning',
+    `product_id`       varchar(32) not null,
+    `buyer_id`         varchar(32) not null,
+    `seller_id`        varchar(32) not null,
+    `order_type`       tinyint unsigned not null comment 'type：1:item，2:service',
+    `order_status`     tinyint unsigned not null comment 'status：1:created, 2:paid, 3:shipped, 4:completed, 5:cancelled',
+    `shipping_charge`  decimal(10, 2) unsigned not null default 0.00 comment 'delivery charge',
+    `total_charge`     decimal(10, 2) unsigned not null comment 'total charge',
+    `date_created`     datetime not null default current_timestamp,
+    `deleted`             boolean default false,
+    index idx_order_id (`order_id`),
+    index idx_buyer_id (`buyer_id`),
+    index idx_seller_id (`seller_id`),
+    index idx_type (`order_type`),
+    index idx_status (`order_status`),
+    index idx_create_time (`date_created`),
     primary key (`id`)
 ) engine = InnoDB default charset = utf8mb4;
-
-
 
 
 

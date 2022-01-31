@@ -5,8 +5,7 @@ import lombok.Data;
 import javax.validation.constraints.NotNull;
 
 @Data
-
-public class PasswordResetUrlRequest{
+public class PasswordResetUrlRequest {
     @NotNull
     String email;
 }

@@ -38,26 +38,19 @@ public class AccountController {
     public RestResponse<String> verifyEmail(@RequestParam("jwt") String jwt) {
         String username = JwtUtil.parseToken(jwt);
         accountService.verifyEmail(username);
-        return RestResponse.success("Email Verified");
+        return RestResponse.success("email verified");
     }
 
     @PostMapping("/sendResetUrl")
     public RestResponse<String> sendPasswordResetUrl(@Valid @RequestBody PasswordResetUrlRequest request) throws BadRequestException {
-        //get username, get email
-        //send link (generate jwt + url)
-        //and return
         accountService.sendPasswordResetURL(request);
-        return RestResponse.success("Password Reset Link Sent");
+        return RestResponse.success("password reset link sent");
     }
 
     @PostMapping("/resetPassword")
-    public RestResponse<String> resetPassword(@RequestBody PasswordResetRequest request) throws BadRequestException {
-        //get password, jwt
-        //get username from jwt
-        //update username, password
-        //and return
+    public RestResponse<String> resetPassword(@Valid @RequestBody PasswordResetRequest request) throws BadRequestException {
         accountService.resetPassword(request);
-        return RestResponse.success("Password Reset Succeed");
+        return RestResponse.success("password reset success");
     }
 
 }

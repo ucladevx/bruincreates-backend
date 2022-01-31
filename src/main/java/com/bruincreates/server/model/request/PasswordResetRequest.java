@@ -5,10 +5,12 @@ import lombok.Data;
 import javax.validation.constraints.NotNull;
 
 @Data
-
 public class PasswordResetRequest {
+
     @NotNull
     String jwt;
+
     @NotNull
     String password;
+
 }

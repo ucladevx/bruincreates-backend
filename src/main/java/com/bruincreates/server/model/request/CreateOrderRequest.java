@@ -5,15 +5,9 @@ import lombok.Data;
 import javax.validation.constraints.NotNull;
 
 @Data
-public class SearchRequest {
+public class CreateOrderRequest {
 
     @NotNull
-    int size;
+    String productId;
 
-    @NotNull
-    int from;
-
-    String keywords;
-
-    String category;
 }

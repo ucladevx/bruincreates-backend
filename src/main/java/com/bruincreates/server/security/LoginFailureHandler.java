@@ -1,6 +1,5 @@
 package com.bruincreates.server.security;
 
-import com.bruincreates.server.model.response.ResponseCode;
 import com.bruincreates.server.model.response.RestResponse;
 import com.bruincreates.server.utility.ServletUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -17,12 +16,12 @@ import java.io.IOException;
 public class LoginFailureHandler implements AuthenticationFailureHandler {
 
     @Override
-    public void onAuthenticationFailure(HttpServletRequest httpServletRequest, HttpServletResponse response, AuthenticationException e) throws IOException {
-        log.warn("Login failed: [{}], AuthenticationException={}", httpServletRequest.getRequestURI(), e);
+    public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response, AuthenticationException e) throws IOException {
+        log.warn("Login failed: [{}], AuthenticationException={}", request.getRequestURI(), e);
         response.setHeader("Access-Control-Allow-Origin", "*");
         response.setHeader("Access-Control-Allow-Headers", "token, Accept, Origin, X-Requested-With, Content-Type, Last-Modified");
         response.setHeader("Content-type", "application/json;charset=UTF-8");
-        ServletUtils.render(httpServletRequest, response, RestResponse.fail(ResponseCode.USER_NOT_EXIST));
+        ServletUtils.render(request, response, RestResponse.fail("wrong username or password"));
     }
 
 }
