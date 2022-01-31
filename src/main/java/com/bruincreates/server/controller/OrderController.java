@@ -33,9 +33,8 @@ public class OrderController {
     @PostMapping("/cancel")
     @PreAuthorize("@ps.permission('user|admin')")
     public RestResponse<Order> cancel(@Valid @RequestBody CancelOrderRequest request) throws BadRequestException {
-        String username = UserUtil.getRuntimeUser().getUsername();
         String orderId = request.getOrderId();
-        Order order = orderService.cancelOrder(username, orderId);
+        Order order = orderService.cancelOrder(orderId);
         return RestResponse.success(order);
     }
 }
