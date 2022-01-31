@@ -46,9 +46,7 @@ public class OrderService {
     }
 
     @Transactional
-    public Order cancelOrder(String orderId) throws BadRequestException {
-        String username = UserUtil.getRuntimeUser().getUsername();
-
+    public Order cancelOrder(String username, String orderId) throws BadRequestException {
         OrderExample orderExample = new OrderExample();
         orderExample.createCriteria().andOrderIdEqualTo(orderId);
 
