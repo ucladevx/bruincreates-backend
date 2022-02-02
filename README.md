@@ -14,7 +14,7 @@ For building and running the application you need:
 - [Maven 3.8.3](https://maven.apache.org)
 - [MySql 8.0.25](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-25.html)
 - [Redis 6.2.6](https://redis.io/)
-- [Elasticsearch 7.1.6](https://www.elastic.co/)
+- [Elasticsearch 7.17](https://www.elastic.co/)
 
 ## Running the application locally
 
