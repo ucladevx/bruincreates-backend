@@ -2,8 +2,10 @@ package com.bruincreates.server.service;
 
 import com.bruincreates.server.dao.mapper.OrderMapper;
 import com.bruincreates.server.dao.po.Order;
+import com.bruincreates.server.dao.po.OrderExample;
 import com.bruincreates.server.dao.po.Product;
 import com.bruincreates.server.exception.BadRequestException;
+import com.bruincreates.server.utility.UserUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -42,4 +44,26 @@ public class OrderService {
         return order;
     }
 
+    @Transactional
+    public Order cancelOrder(String username, String orderId) throws BadRequestException {
+        OrderExample orderExample = new OrderExample();
+        orderExample.createCriteria().andOrderIdEqualTo(orderId);
+
+        Order order = orderMapper.selectByExample(orderExample).get(0);
+        byte orderStatus = order.getOrderStatus();
+
+        // under assumption that buyer id == buyer username
+        // check if current user = buyer of the order
+        if(!username.equals(order.getBuyerId()))
+            throw new BadRequestException("current user does not match buyer of the order");
+        // if order status is "shipped" or "completed", do not allow order cancellation
+        else if (orderStatus == (byte) 3 || orderStatus == (byte) 4 || orderStatus == (byte) 5)
+            throw new BadRequestException("order status is \"shipped\", \"completed\", or already \"cancelled\", order cancellation not allowed");
+
+        order.setOrderStatus((byte) 5);
+        order.setDeleted(true);
+
+        orderMapper.updateByPrimaryKey(order);
+        return order;
+    }
 }

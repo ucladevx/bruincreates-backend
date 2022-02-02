@@ -3,6 +3,7 @@ package com.bruincreates.server.controller;
 import com.bruincreates.server.dao.po.Order;
 import com.bruincreates.server.exception.BadRequestException;
 import com.bruincreates.server.model.request.CreateOrderRequest;
+import com.bruincreates.server.model.request.CancelOrderRequest;
 import com.bruincreates.server.model.request.ProcessOrderRequest;
 import com.bruincreates.server.model.response.BuyerOrderResponse;
 import com.bruincreates.server.model.response.RestResponse;
@@ -33,6 +34,15 @@ public class OrderController {
         return RestResponse.success(order);
     }
 
+    @PostMapping("/cancel")
+    @PreAuthorize("@ps.permission('user|admin')")
+    public RestResponse<Order> cancel(@Valid @RequestBody CancelOrderRequest request) throws BadRequestException {
+        String username = UserUtil.getRuntimeUser().getUsername();
+        String orderId = request.getOrderId();
+        Order order = orderService.cancelOrder(username, orderId);
+        return RestResponse.success(order);
+    }
+  
     @PostMapping("/process")
     @PreAuthorize("@ps.permission('user|admin')")
     public RestResponse<Order> process(@Valid @RequestBody ProcessOrderRequest request) throws BadRequestException {
