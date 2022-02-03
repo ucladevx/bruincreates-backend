@@ -19,7 +19,7 @@ public class SearchController {
     @Autowired
     SearchService searchService;
 
-    @PostMapping("/item")
+    @PostMapping("/artwork")
     public RestResponse<SearchResponse> searchItem(@Valid @RequestBody SearchRequest request) {
         //TODO: implementation needed
         //TODO: pre-process keywords. e.g. "asa-sasa asa sasa" = "asa sasa"
