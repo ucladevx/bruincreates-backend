@@ -2,6 +2,7 @@ package com.bruincreates.server.controller;
 
 import com.bruincreates.server.model.request.SearchRequest;
 import com.bruincreates.server.model.response.RestResponse;
+import com.bruincreates.server.model.response.SearchResponse;
 import com.bruincreates.server.service.SearchService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,31 +19,28 @@ public class SearchController {
     @Autowired
     SearchService searchService;
 
-    @GetMapping("/test")
-    @PreAuthorize("@ps.permission('user|admin')")
-    public RestResponse<String> test() {
-        return RestResponse.success();
-    }
-
-    @PostMapping("/basic")
-    public RestResponse<String> searchBasic(@Valid @RequestBody SearchRequest request) {
+    @PostMapping("/artwork")
+    public RestResponse<SearchResponse> searchItem(@Valid @RequestBody SearchRequest request) {
         //TODO: implementation needed
-        //TODO: search basic doesn't require keywords or category
-        return RestResponse.success();
-    }
-
-    @PostMapping("/item")
-    public RestResponse<String> searchItem(@Valid @RequestBody SearchRequest request) {
-        //TODO: implementation needed
-        //TODO: search item can search with category or without category/filter
-        return RestResponse.success();
+        //TODO: pre-process keywords. e.g. "asa-sasa asa sasa" = "asa sasa"
+        //TODO: search priority. e.g. category is a must match, keyword is a fuzzy search
+        //TODO: result priority. how should you sort your match result if two results have the same ES score
+        //TODO: pagination and how to indicate no more data available
+        //TODO: should you return the entire product to frontend? how about just product id and product url?
+        SearchResponse response = null;
+        return RestResponse.success(response);
     }
 
     @PostMapping("/service")
-    public RestResponse<String> searchService(@Valid @RequestBody SearchRequest request) {
+    public RestResponse<SearchResponse> searchService(@Valid @RequestBody SearchRequest request) {
         //TODO: implementation needed
-        //TODO: search service can search with category or without category/filter
-        return RestResponse.success();
+        //TODO: pre-process keywords. e.g. "asa-sasa asa sasa" = "asa sasa"
+        //TODO: search priority. e.g. category is a must match, keyword is a fuzzy search
+        //TODO: result priority. how should you sort your match result if two results have the same ES score
+        //TODO: pagination and how to indicate no more data available
+        //TODO: should you return the entire product to frontend? how about just product id and product url?
+        SearchResponse response = null;
+        return RestResponse.success(response);
     }
 
 }

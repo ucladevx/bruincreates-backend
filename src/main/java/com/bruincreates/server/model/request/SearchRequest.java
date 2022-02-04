@@ -3,10 +3,10 @@ package com.bruincreates.server.model.request;
 import lombok.Data;
 
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Data
 public class SearchRequest {
-
     @NotNull
     int size;
 
@@ -14,6 +14,5 @@ public class SearchRequest {
     int from;
 
     String keywords;
-
-    String category;
+    List<String> categories;
 }
