@@ -48,7 +48,7 @@ public class OrderController {
     public RestResponse<Order> process(@Valid @RequestBody ProcessOrderRequest request) throws BadRequestException {
         String username = UserUtil.getRuntimeUser().getUsername();
         String orderId = request.getOrderId();
-        Order order = null;
+        Order order = orderService.processOrder(username, orderId);
         return RestResponse.success(order);
     }
 
@@ -56,7 +56,7 @@ public class OrderController {
     @PreAuthorize("@ps.permission('user|admin')")
     public RestResponse<BuyerOrderResponse> getBuyerHistory() throws BadRequestException {
         String username = UserUtil.getRuntimeUser().getUsername();
-        BuyerOrderResponse buyerOrderResponse = null;
+        BuyerOrderResponse buyerOrderResponse = orderService.getBuyerHistory(username);
         return RestResponse.success(buyerOrderResponse);
     }
 
@@ -64,7 +64,7 @@ public class OrderController {
     @PreAuthorize("@ps.permission('user|admin')")
     public RestResponse<SellerOrderResponse> getSellerHistory() throws BadRequestException {
         String username = UserUtil.getRuntimeUser().getUsername();
-        SellerOrderResponse sellerOrderResponse = null;
+        SellerOrderResponse sellerOrderResponse = orderService.getSellerHistory(username);
         return RestResponse.success(sellerOrderResponse);
     }
 }
