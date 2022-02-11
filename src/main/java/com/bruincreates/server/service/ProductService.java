@@ -41,6 +41,18 @@ public class ProductService {
         return product;
     }
 
+    public void deleteProduct(String username, String productId) {
+        //construct query example
+        ProductExample example = new ProductExample();
+        example.createCriteria().andProductIdEqualTo(productId).andSellerIdEqualTo(username);
+
+        //delete from mysql
+        productMapper.deleteByExample(example);
+
+        //delete from es
+
+    }
+
     @Transactional
     protected Product checkInventoryAndBuy(String productId) throws BadRequestException {
         //check if product is available

@@ -2,6 +2,7 @@ package com.bruincreates.server.controller;
 
 import com.bruincreates.server.dao.po.Product;
 import com.bruincreates.server.model.request.CreateProductRequest;
+import com.bruincreates.server.model.request.DeleteProductRequest;
 import com.bruincreates.server.model.response.RestResponse;
 import com.bruincreates.server.service.ProductService;
 import com.bruincreates.server.utility.UserUtil;
@@ -27,5 +28,13 @@ public class ProductController {
         String username = UserUtil.getRuntimeUser().getUsername();
         Product product = productService.createProduct(username, request);
         return RestResponse.success(product);
+    }
+
+    @PostMapping("/delete")
+    public RestResponse<String> deleteProduct(@Valid @RequestBody DeleteProductRequest request) {
+        String username = UserUtil.getRuntimeUser().getUsername();
+        String productId = request.getProductId();
+        productService.deleteProduct(username, productId);
+        return RestResponse.success();
     }
 }
