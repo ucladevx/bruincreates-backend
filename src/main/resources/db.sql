@@ -22,9 +22,9 @@ create table if not exists `user` (
 
 create table if not exists `product` (
     `id`                  int(11) not null auto_increment,
-    `product_id`          varchar(32) not null unique,
+    `product_id`          varchar(36) not null unique,
     `seller_id`           varchar(32) not null,
-    `product_type`        tinyint unsigned not null comment 'type：1:item，2:service',
+    `product_type`        tinyint unsigned not null comment 'type：1:artwork，2:service',
     `product_title`       varchar(32) not null,
     `product_category`    varchar(32) not null,
     `keywords`            varchar(64) not null,
