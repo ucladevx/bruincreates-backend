@@ -1,20 +1,20 @@
 package com.bruincreates.server.controller;
 
+import com.bruincreates.server.model.request.AddReviewRequest;
 import com.bruincreates.server.model.response.RestResponse;
 import com.bruincreates.server.model.user.UserControlBlock;
 import com.bruincreates.server.service.ProductReviewService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import com.bruincreates.server.utility.JwtUtil;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.web.bind.annotation.PostMapping;
+
 import java.security.Principal;
 import com.bruincreates.server.dao.po.*;
+
+import javax.validation.Valid;
 
 @Slf4j
 @RestController
@@ -39,11 +39,9 @@ public class ProductReviewController {
     }
 
     @PostMapping("/addReview")
-    public RestResponse<String> addReview(Product prod, String review) {
-        UserControlBlock user = (UserControlBlock) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        String username = user.getUsername();
-        Integer id = Integer.parseInt(prod.getProductId());
-        productReviewService.addReview(username, id, review);
+    public RestResponse<String> addReview(@Valid @RequestBody AddReviewRequest request) {
+        String username = UserUtil.getRuntimeUser.getUsername();
+        productReviewService.addReview(request.getProductId(), request.getReview(), username);
         return RestResponse.success("Product Review Added");
     }
 
