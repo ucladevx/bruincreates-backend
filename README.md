@@ -8,15 +8,15 @@ BruinCreates is an E-commerce shopping site for visual art students at UCLA.
 
 ## Requirements
 
-For building and running the application you need:
+For building and running the application you need, also see below for download and installment toturials:
 
 - [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - [Maven 3.8.3](https://maven.apache.org)
-- [MySql 8.0.25](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-25.html)
-- [Redis 6.2.6](https://redis.io/)
+- [MySql 8.0.25](https://downloads.mysql.com/archives/community/)
+- [Redis 6.2.6](https://redis.io/) 
 - [Elasticsearch 6.8.12](https://www.elastic.co/downloads/past-releases/elasticsearch-6-8-12)
 
-（make sure to have MySql, Redis, Elasticsearch server running before starting SpringBoot server)
+Please **make sure** to have MySql, Redis, Elasticsearch server running before starting the SpringBoot server.
 
 ## Running the application locally
 
@@ -32,10 +32,17 @@ $ tar xzf redis-6.2.6.tar.gz
 $ cd redis-6.2.6
 $ make
 $ src/redis-server
-$ src/redis-cli
+$ src/redis-cli  # optional
 
-# set up mysql
-mysql --host=localhost --user=root --password=123456 bruincreates
+# set up elastic search (Mac)
+export ES_HOME=~/elasticsearch-6.8.12
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_333.jdk/Contents/Home
+export PATH=$ES_HOME/bin:$JAVA_HOME/bin:$PATH
+
+# set up mysql (mac)
+/usr/local/mysql/bin/mysql -u root -p < src/main/resources/db.sql
+# set up mysql (Windows, first open mysql console)
+source src\main\resources\db.sql;
 ```
 
 Alternatively you can use the [Spring Boot Maven plugin](https://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-maven-plugin.html) like so:
@@ -70,7 +77,7 @@ GET: localhost:8080/api/test
 ## Use Elasticsearch
 [Elasticsearch](https://www.elastic.co/elasticsearch/) is a NoSql, RESTful search database. In this project, we use Elasticsearch for product search query and chat message storage. 
 
-During installation, please make sure the version installed is [6.8.12](https://www.elastic.co/downloads/past-releases/elasticsearch-6-8-12). You could use the following POST command to test the connectivity of Elasticsearch database after login:
+During installation, please make sure the version installed is [6.8.12](https://www.elastic.co/downloads/past-releases/elasticsearch-6-8-12). It's recommended to make Elasticsearch as a start-up option. If not, please run ./bin/elasticsearch to open the elasticsearch server. You could use the following POST command to test the connectivity of Elasticsearch database after login:
 ```shell
 POST: localhost:8080/api/product/create
 Body: JSON
