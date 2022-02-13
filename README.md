@@ -1,4 +1,4 @@
-# BruinCreates SpringBoot Server
+ # BruinCreates SpringBoot Server
 
 [![Build Status](https://travis-ci.org/codecentric/springboot-sample-app.svg?branch=master)](https://travis-ci.org/codecentric/springboot-sample-app)
 [![Coverage Status](https://coveralls.io/repos/github/codecentric/springboot-sample-app/badge.svg?branch=master)](https://coveralls.io/github/codecentric/springboot-sample-app?branch=master)
@@ -14,7 +14,9 @@ For building and running the application you need:
 - [Maven 3.8.3](https://maven.apache.org)
 - [MySql 8.0.25](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-25.html)
 - [Redis 6.2.6](https://redis.io/)
-- [Elasticsearch 7.17](https://www.elastic.co/)
+- [Elasticsearch 6.8.12](https://www.elastic.co/downloads/past-releases/elasticsearch-6-8-12)
+
+（make sure to have MySql, Redis, Elasticsearch server running before starting SpringBoot server)
 
 ## Running the application locally
 
@@ -65,7 +67,33 @@ password:test
 # try sample query api
 GET: localhost:8080/api/test
 ```
+## Use Elasticsearch
+[Elasticsearch](https://www.elastic.co/elasticsearch/) is a NoSql, RESTful search database. In this project, we use Elasticsearch for product search query and chat message storage. 
 
+During installation, please make sure the version installed is [6.8.12](https://www.elastic.co/downloads/past-releases/elasticsearch-6-8-12). You could use the following POST command to test the connectivity of Elasticsearch database after login:
+```shell
+POST: localhost:8080/api/product/create
+Body: JSON
+{
+    "title": "test",
+    "description": "This is a test",
+    "type": "1",
+    "keywords": "test",
+    "price": 10.5,
+    "stock": 1,
+    "images": ["img1", "img2"],
+    "categories": ["test1", "test2", "test3"]
+}
+
+POST: localhost:8080/api/search/artwork
+Body: JSON
+{
+    "size": 1,
+    "from": 1,
+    "keywords": "test"
+}
+```
+To visualize the database, you could use a Google Chrome [ElasticSearch Head](https://chrome.google.com/webstore/detail/elasticsearch-head/ffmkiejjmecolpfloofpjologoblkegm) plugin. You could go to Browser tab and click bruincreates indices for data visulization and go to Structured Query tab for executing queries. For more complex query and data visulization, you could use Elasticsearch's [Kibana](https://www.elastic.co/kibana/).
 ## Copyright
 
 Released under the Apache License 2.0. See the [LICENSE](https://github.com/codecentric/springboot-sample-app/blob/master/LICENSE) file.

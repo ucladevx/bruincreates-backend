@@ -2,7 +2,10 @@ package com.bruincreates.server.dao.po;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.elasticsearch.annotations.Document;
 
+@Document(indexName = "bruincreates", type = "product")
 public class Product {
     /**
      *
@@ -11,6 +14,7 @@ public class Product {
      *
      * @mbg.generated Sat Jan 29 19:31:53 PST 2022
      */
+    @Id
     private Integer id;
 
     /**
