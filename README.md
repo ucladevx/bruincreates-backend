@@ -70,7 +70,7 @@ GET: localhost:8080/api/test
 ## Use Elasticsearch
 [Elasticsearch](https://www.elastic.co/elasticsearch/) is a NoSql, RESTful search database. In this project, we use Elasticsearch for product search query and chat message storage. 
 
-During installation, please make sure the version installed is [6.8.12](https://www.elastic.co/downloads/past-releases/elasticsearch-6-8-12). You could use the following POST command to test the connectivity of Elasticsearch database after login:
+During installation, please make sure the version installed is [6.8.12](https://www.elastic.co/downloads/past-releases/elasticsearch-6-8-12). It's recommended to make Elasticsearch as a start-up option. If not, please run ./bin/elasticsearch to open the elasticsearch server. You could use the following POST command to test the connectivity of Elasticsearch database after login:
 ```shell
 POST: localhost:8080/api/product/create
 Body: JSON
