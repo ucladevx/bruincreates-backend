@@ -4,6 +4,7 @@ import com.bruincreates.server.model.request.SearchRequest;
 import com.bruincreates.server.model.response.RestResponse;
 import com.bruincreates.server.model.response.SearchResponse;
 import com.bruincreates.server.service.SearchService;
+import com.bruincreates.server.utility.JwtUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -27,7 +28,7 @@ public class SearchController {
         //TODO: result priority. how should you sort your match result if two results have the same ES score
         //TODO: pagination and how to indicate no more data available
         //TODO: should you return the entire product to frontend? how about just product id and product url?
-        SearchResponse response = null;
+        SearchResponse response = searchService.searchDocument(request);
         return RestResponse.success(response);
     }
 
@@ -42,5 +43,4 @@ public class SearchController {
         SearchResponse response = null;
         return RestResponse.success(response);
     }
-
 }

@@ -5,6 +5,7 @@ import com.bruincreates.server.dao.po.Product;
 import com.bruincreates.server.dao.po.ProductExample;
 import com.bruincreates.server.exception.BadRequestException;
 import com.bruincreates.server.model.request.CreateProductRequest;
+import com.bruincreates.server.repository.SearchRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -18,6 +19,13 @@ public class ProductService {
 
     @Autowired
     ProductMapper productMapper;
+
+    @Autowired
+    private final SearchRepository searchRepository;
+
+    public ProductService(SearchRepository searchRepository) {
+        this.searchRepository = searchRepository;
+    }
 
     public Product createProduct(String seller, CreateProductRequest request) {
         //construct product body
@@ -37,7 +45,7 @@ public class ProductService {
         productMapper.insertSelective(product);
 
         //store to elasticsearch database
-
+        searchRepository.save(product);
         return product;
     }
 
@@ -50,7 +58,7 @@ public class ProductService {
         productMapper.deleteByExample(example);
 
         //delete from es
-
+        searchRepository.deleteByProductId(productId);
     }
 
     @Transactional
