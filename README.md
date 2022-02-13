@@ -16,6 +16,8 @@ For building and running the application you need:
 - [Redis 6.2.6](https://redis.io/)
 - [Elasticsearch 6.8.12](https://www.elastic.co/downloads/past-releases/elasticsearch-6-8-12)
 
+（make sure to have MySql, Redis, Elasticsearch server running before starting SpringBoot server)
+
 ## Running the application locally
 
 There are several ways to run a Spring Boot application on your local machine. One way is to execute the `main` method in the `com.bruincreates.server.ServerApplication` class from your IDE.
