@@ -16,7 +16,7 @@ For building and running the application you need:
 - [Redis 6.2.6](https://redis.io/)
 - [Elasticsearch 6.8.12](https://www.elastic.co/downloads/past-releases/elasticsearch-6-8-12)
 
-（make sure to have MySql, Redis, Elasticsearch server running before starting SpringBoot server)
+Please **make sure** to have MySql, Redis, Elasticsearch server running before starting the SpringBoot server.
 
 ## Running the application locally
 
