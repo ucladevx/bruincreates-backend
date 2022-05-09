@@ -8,12 +8,12 @@ BruinCreates is an E-commerce shopping site for visual art students at UCLA.
 
 ## Requirements
 
-For building and running the application you need:
+For building and running the application you need, also see below for download and installment toturials:
 
 - [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - [Maven 3.8.3](https://maven.apache.org)
 - [MySql 8.0.25](https://downloads.mysql.com/archives/community/)
-- [Redis 6.2.6](https://redis.io/) Also see below for download and installment toturials
+- [Redis 6.2.6](https://redis.io/) 
 - [Elasticsearch 6.8.12](https://www.elastic.co/downloads/past-releases/elasticsearch-6-8-12)
 
 Please **make sure** to have MySql, Redis, Elasticsearch server running before starting the SpringBoot server.
@@ -33,6 +33,11 @@ $ cd redis-6.2.6
 $ make
 $ src/redis-server
 $ src/redis-cli  # optional
+
+# set up elastic search (Mac)
+export ES_HOME=~elasticsearch-6.8.12
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_333.jdk/Contents/Home
+export PATH=$ES_HOME/bin:$JAVA_HOME/bin:$PATH
 
 # set up mysql
 mysql --host=localhost --user=root --password=123456 bruincreates
