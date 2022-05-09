@@ -35,7 +35,7 @@ $ src/redis-server
 $ src/redis-cli  # optional
 
 # set up elastic search (Mac)
-export ES_HOME=~elasticsearch-6.8.12
+export ES_HOME=~/elasticsearch-6.8.12
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_333.jdk/Contents/Home
 export PATH=$ES_HOME/bin:$JAVA_HOME/bin:$PATH
 
