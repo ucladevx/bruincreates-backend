@@ -12,8 +12,8 @@ For building and running the application you need:
 
 - [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - [Maven 3.8.3](https://maven.apache.org)
-- [MySql 8.0.25](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-25.html)
-- [Redis 6.2.6](https://redis.io/)
+- [MySql 8.0.25](https://downloads.mysql.com/archives/community/)
+- [Redis 6.2.6](https://redis.io/) Also see below for download and installment toturials
 - [Elasticsearch 6.8.12](https://www.elastic.co/downloads/past-releases/elasticsearch-6-8-12)
 
 Please **make sure** to have MySql, Redis, Elasticsearch server running before starting the SpringBoot server.
@@ -32,7 +32,7 @@ $ tar xzf redis-6.2.6.tar.gz
 $ cd redis-6.2.6
 $ make
 $ src/redis-server
-$ src/redis-cli
+$ src/redis-cli  # optional
 
 # set up mysql
 mysql --host=localhost --user=root --password=123456 bruincreates
