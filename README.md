@@ -39,8 +39,10 @@ export ES_HOME=~/elasticsearch-6.8.12
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_333.jdk/Contents/Home
 export PATH=$ES_HOME/bin:$JAVA_HOME/bin:$PATH
 
-# set up mysql
-mysql --host=localhost --user=root --password=123456 bruincreates
+# set up mysql (mac)
+/usr/local/mysql/bin/mysql -u root -p < src/main/resources/db.sql
+# set up mysql (Windows, first open mysql console)
+source src\main\resources\db.sql;
 ```
 
 Alternatively you can use the [Spring Boot Maven plugin](https://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-maven-plugin.html) like so:
