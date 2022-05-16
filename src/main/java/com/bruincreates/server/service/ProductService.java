@@ -5,7 +5,9 @@ import com.bruincreates.server.dao.po.Product;
 import com.bruincreates.server.dao.po.ProductExample;
 import com.bruincreates.server.exception.BadRequestException;
 import com.bruincreates.server.model.request.CreateProductRequest;
+import com.bruincreates.server.model.request.UpdateProductRequest;
 import com.bruincreates.server.repository.SearchRepository;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -76,6 +78,30 @@ public class ProductService {
 
         //decrement stock
         productMapper.updateByExampleSelective(product, productExample);
+        return product;
+    }
+
+    public Product updateProduct(String productId, UpdateProductRequest request) {
+        //find the productID of the one we want to update
+        Product product = findProductByProductId(productId);
+
+        ProductExample productExample = new ProductExample();
+        productExample.createCriteria().andProductIdEqualTo(productId);
+
+        product.setProductType(request.getType().equals("artwork") ? (byte)1 : (byte) 2);
+        product.setProductTitle(request.getTitle());
+        product.setKeywords(request.getKeywords());
+        product.setProductDescription(request.getDescription());
+        product.setProductPrice(BigDecimal.valueOf(request.getPrice()));
+        product.setProductStock(request.getStock());
+        product.setProductImages(concatListValues(request.getImages()));
+        product.setProductCategory(concatListValues(request.getCategories()));
+        product.setProductId(request.getProductId());
+
+        //update the product
+        productMapper.updateByExampleSelective(product, productExample);
+
+        //store to elasticsearch database
         return product;
     }
 
