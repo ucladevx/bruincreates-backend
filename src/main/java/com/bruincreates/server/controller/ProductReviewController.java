@@ -1,12 +1,16 @@
 package com.bruincreates.server.controller;
 
+import com.bruincreates.server.exception.BadRequestException;
 import com.bruincreates.server.model.response.RestResponse;
+import com.bruincreates.server.model.request.CreateReviewRequest;
 import com.bruincreates.server.service.ProductReviewService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 @Slf4j
 @RestController
@@ -18,11 +22,10 @@ public class ProductReviewController {
 
     @PostMapping("/create")
     @PreAuthorize("@ps.permission('user|admin')")
-    public RestResponse<String> createReviews() {
-        // TODO: implementation needed
-        // TODO: define review model
-        // TODO: save review to database (in review service)
-        return RestResponse.success();
+    public RestResponse<String> createReviews(@Valid @RequestBody CreateReviewRequest request) throws BadRequestException {
+        productReviewService.createReview(request);
+
+        return RestResponse.success("Review posted");
     }
 
     @GetMapping("/get")

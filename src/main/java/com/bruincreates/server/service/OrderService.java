@@ -178,4 +178,13 @@ public class OrderService {
         response.setCancelledOrder(cancelled);
         return response;
     }
+
+    public boolean hasCompletedOrder(String username, String productId) {
+
+        OrderExample orderExample = new OrderExample();
+        orderExample.createCriteria().andProductIdEqualTo(productId).andOrderStatusEqualTo((byte) 4).andBuyerIdEqualTo(username);
+        List<Order> completedOrders = orderMapper.selectByExample(orderExample);
+
+        return completedOrders.size() > 0;
+    }
 }
