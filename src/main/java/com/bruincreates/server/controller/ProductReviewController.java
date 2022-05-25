@@ -1,6 +1,7 @@
 package com.bruincreates.server.controller;
 
 import com.bruincreates.server.exception.BadRequestException;
+import com.bruincreates.server.model.request.DeleteReviewRequest;
 import com.bruincreates.server.model.response.RestResponse;
 import com.bruincreates.server.model.request.CreateReviewRequest;
 import com.bruincreates.server.service.ProductReviewService;
@@ -26,6 +27,13 @@ public class ProductReviewController {
         productReviewService.createReview(request);
 
         return RestResponse.success("Review posted");
+    }
+
+    @PostMapping("/delete")
+    public RestResponse<String> deleteReview(@Valid @RequestBody DeleteReviewRequest request) throws BadRequestException {
+        productReviewService.deleteReview(request);
+
+        return RestResponse.success("Review deleted");
     }
 
     @GetMapping("/get")

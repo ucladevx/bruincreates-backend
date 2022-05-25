@@ -4,6 +4,7 @@ import com.bruincreates.server.dao.mapper.ProductReviewMapper;
 import com.bruincreates.server.dao.po.ProductReview;
 import com.bruincreates.server.dao.po.ProductReviewExample;
 import com.bruincreates.server.model.request.CreateReviewRequest;
+import com.bruincreates.server.model.request.DeleteReviewRequest;
 import com.bruincreates.server.exception.BadRequestException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -50,5 +51,32 @@ public class ProductReviewService {
         productReview.setProductReview(reviewContent);
 
         productReviewMapper.insertSelective(productReview);
+    }
+
+    public void deleteReview (DeleteReviewRequest request) throws BadRequestException {
+
+        String username = request.getUsername();
+        String productId = request.getProductId();
+
+        // Check if user is original buyer
+        if(!orderService.hasCompletedOrder(username, productId)){
+            throw new BadRequestException("user is not the original buyer of this product");
+        }
+
+        // Check review exists
+        ProductReviewExample reviewExample = new ProductReviewExample();
+        reviewExample.createCriteria().andBuyerIdEqualTo(username).andProductIdEqualTo(productId);
+        List<ProductReview> reviews = productReviewMapper.selectByExample(reviewExample);
+
+        int reviewsLength = reviews.size();
+        if(reviewsLength == 0){
+            throw new BadRequestException("user has has no existing reviews of this product");
+        }
+        else if(reviewsLength > 1) {
+            throw new BadRequestException("database needs fixing: there is more than 1 review in the db by this user for this product");
+        }
+
+        // delete review object from mysql db
+        productReviewMapper.deleteByExample(reviewExample);
     }
 }
