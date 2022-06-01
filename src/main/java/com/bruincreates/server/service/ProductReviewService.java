@@ -9,7 +9,10 @@ import com.bruincreates.server.exception.BadRequestException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 @Service
 public class ProductReviewService {
@@ -78,5 +81,24 @@ public class ProductReviewService {
 
         // delete review object from mysql db
         productReviewMapper.deleteByExample(reviewExample);
+    }
+
+    public List<ProductReview> getProductReviews (String productId, int size, int offset) {
+
+        // retrieve product reviews with same productId
+        ProductReviewExample reviewExample = new ProductReviewExample();
+        reviewExample.createCriteria().andProductIdEqualTo(productId);
+        List<ProductReview> reviews = productReviewMapper.selectByExample(reviewExample);
+
+        // add desired ProductReview objects to output array
+        // based on size and offset
+        List<ProductReview> reviewBatch = new ArrayList<ProductReview>();
+        int start = offset * size;
+        List<Integer> indices = IntStream.rangeClosed(start, start + size - 1).boxed().collect(Collectors.toList());
+        for (int i : indices) {
+            reviewBatch.add(reviews.get(i));
+        }
+
+        return reviewBatch;
     }
 }

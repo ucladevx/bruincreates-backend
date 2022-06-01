@@ -1,5 +1,6 @@
 package com.bruincreates.server.controller;
 
+import com.bruincreates.server.dao.po.ProductReview;
 import com.bruincreates.server.exception.BadRequestException;
 import com.bruincreates.server.model.request.DeleteReviewRequest;
 import com.bruincreates.server.model.response.RestResponse;
@@ -7,11 +8,11 @@ import com.bruincreates.server.model.request.CreateReviewRequest;
 import com.bruincreates.server.service.ProductReviewService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @Slf4j
 @RestController
@@ -22,7 +23,6 @@ public class ProductReviewController {
     ProductReviewService productReviewService;
 
     @PostMapping("/create")
-    @PreAuthorize("@ps.permission('user|admin')")
     public RestResponse<String> createReviews(@Valid @RequestBody CreateReviewRequest request) throws BadRequestException {
         productReviewService.createReview(request);
 
@@ -37,13 +37,11 @@ public class ProductReviewController {
     }
 
     @GetMapping("/get")
-    @PreAuthorize("@ps.permission('user|admin')")
-    public RestResponse<String> getReviews(@RequestParam("product_id") String productId, @RequestParam("offset") int offset) {
-        // TODO: implementation needed
-        // TODO: offset = 3 means 3 reviews are loaded everytime
-        // TODO: return a list of reviews
+    public RestResponse<List<ProductReview>> getReviews(@RequestParam("product_id") String productId, @RequestParam("size") int size, @RequestParam("offset") int offset) {
         SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        return RestResponse.success();
-    }
 
+        List<ProductReview> productReviews = productReviewService.getProductReviews(productId, size, offset);
+
+        return RestResponse.success(productReviews);
+    }
 }
