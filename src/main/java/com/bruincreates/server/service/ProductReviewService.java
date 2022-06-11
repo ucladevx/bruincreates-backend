@@ -44,8 +44,10 @@ public class ProductReviewService {
         if(reviewsLength == 1){
             throw new BadRequestException("user has already made a review for this product");
         }
-        else if(reviewsLength > 1) {
-            throw new BadRequestException("database needs fixing: there is more than 1 review in the db by this user for this product");
+
+        // Validate review is within 512 character max length
+        if(reviewContent.length() > 512) {
+            throw new BadRequestException("Review cannot exceed 512 characters");
         }
 
         // create review object and insert into db
@@ -77,9 +79,6 @@ public class ProductReviewService {
         if(reviewsLength == 0){
             throw new BadRequestException("user has has no existing reviews of this product");
         }
-        else if(reviewsLength > 1) {
-            throw new BadRequestException("database needs fixing: there is more than 1 review in the db by this user for this product");
-        }
 
         // delete review object from mysql db
         productReviewMapper.deleteByExample(reviewExample);
@@ -89,7 +88,8 @@ public class ProductReviewService {
 
         // retrieve product reviews with same productId
         ProductReviewExample reviewExample = new ProductReviewExample();
-        reviewExample.createCriteria().andProductIdEqualTo(productId);
+        reviewExample.createCriteria()
+                .andProductIdEqualTo(productId);
         List<ProductReview> reviews = productReviewMapper.selectByExample(reviewExample);
 
         // add desired ProductReview objects to output array
