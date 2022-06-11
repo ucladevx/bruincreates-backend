@@ -6,6 +6,7 @@ import com.bruincreates.server.model.request.DeleteReviewRequest;
 import com.bruincreates.server.model.response.RestResponse;
 import com.bruincreates.server.model.request.CreateReviewRequest;
 import com.bruincreates.server.service.ProductReviewService;
+import com.bruincreates.server.utility.UserUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -24,24 +25,21 @@ public class ProductReviewController {
 
     @PostMapping("/create")
     public RestResponse<String> createReviews(@Valid @RequestBody CreateReviewRequest request) throws BadRequestException {
-        productReviewService.createReview(request);
-
+        String username = UserUtil.getRuntimeUser().getUsername();
+        productReviewService.createReview(request, username);
         return RestResponse.success("Review posted");
     }
 
     @PostMapping("/delete")
     public RestResponse<String> deleteReview(@Valid @RequestBody DeleteReviewRequest request) throws BadRequestException {
-        productReviewService.deleteReview(request);
-
+        String username = UserUtil.getRuntimeUser().getUsername();
+        productReviewService.deleteReview(request, username);
         return RestResponse.success("Review deleted");
     }
 
     @GetMapping("/get")
     public RestResponse<List<ProductReview>> getReviews(@RequestParam("product_id") String productId, @RequestParam("size") int size, @RequestParam("offset") int offset) {
-        SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-
         List<ProductReview> productReviews = productReviewService.getProductReviews(productId, size, offset);
-
         return RestResponse.success(productReviews);
     }
 }

@@ -23,9 +23,8 @@ public class ProductReviewService {
     @Autowired
     OrderService orderService;
 
-    public void createReview (CreateReviewRequest request) throws BadRequestException {
+    public void createReview (CreateReviewRequest request, String username) throws BadRequestException {
 
-        String username = request.getUsername();
         String productId = request.getProductId();
         String reviewContent = request.getProductReview();
 
@@ -36,7 +35,9 @@ public class ProductReviewService {
 
         // Validate reviewer did not previously review this product
         ProductReviewExample reviewExample = new ProductReviewExample();
-        reviewExample.createCriteria().andBuyerIdEqualTo(username).andProductIdEqualTo(productId);
+        reviewExample.createCriteria()
+                .andBuyerIdEqualTo(username)
+                .andProductIdEqualTo(productId);
         List<ProductReview> reviews = productReviewMapper.selectByExample(reviewExample);
 
         int reviewsLength = reviews.size();
@@ -56,9 +57,8 @@ public class ProductReviewService {
         productReviewMapper.insertSelective(productReview);
     }
 
-    public void deleteReview (DeleteReviewRequest request) throws BadRequestException {
+    public void deleteReview (DeleteReviewRequest request, String username) throws BadRequestException {
 
-        String username = request.getUsername();
         String productId = request.getProductId();
 
         // Check if user is original buyer
@@ -68,7 +68,9 @@ public class ProductReviewService {
 
         // Check review exists
         ProductReviewExample reviewExample = new ProductReviewExample();
-        reviewExample.createCriteria().andBuyerIdEqualTo(username).andProductIdEqualTo(productId);
+        reviewExample.createCriteria()
+                .andBuyerIdEqualTo(username)
+                .andProductIdEqualTo(productId);
         List<ProductReview> reviews = productReviewMapper.selectByExample(reviewExample);
 
         int reviewsLength = reviews.size();
@@ -92,12 +94,8 @@ public class ProductReviewService {
 
         // add desired ProductReview objects to output array
         // based on size and offset
-        List<ProductReview> reviewBatch = new ArrayList<ProductReview>();
         int start = offset * size;
-        List<Integer> indices = IntStream.rangeClosed(start, start + size - 1).boxed().collect(Collectors.toList());
-        for (int i : indices) {
-            reviewBatch.add(reviews.get(i));
-        }
+        List<ProductReview> reviewBatch = reviews.subList(start, start + size);
 
         return reviewBatch;
     }

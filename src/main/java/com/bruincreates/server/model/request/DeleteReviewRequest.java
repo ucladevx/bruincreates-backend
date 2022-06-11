@@ -8,9 +8,6 @@ import javax.validation.constraints.NotNull;
 public class DeleteReviewRequest {
 
     @NotNull
-    String username;
-
-    @NotNull
     String productId;
 
 }
