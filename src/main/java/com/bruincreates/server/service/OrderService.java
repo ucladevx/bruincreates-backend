@@ -27,6 +27,7 @@ public class OrderService {
     ProductService productService;
 
     private static final DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd-HH:mm:ss");
+    private static final byte completedOrder = 4;
 
     @Transactional
     public Order createOrder(String buyer, String productId) throws BadRequestException {
@@ -177,5 +178,17 @@ public class OrderService {
         response.setPastOrder(past);
         response.setCancelledOrder(cancelled);
         return response;
+    }
+
+    public boolean hasCompletedOrder(String username, String productId) {
+
+        OrderExample orderExample = new OrderExample();
+        orderExample.createCriteria()
+                .andProductIdEqualTo(productId)
+                .andOrderStatusEqualTo(completedOrder)
+                .andBuyerIdEqualTo(username);
+        List<Order> completedOrders = orderMapper.selectByExample(orderExample);
+
+        return completedOrders.size() > 0;
     }
 }
