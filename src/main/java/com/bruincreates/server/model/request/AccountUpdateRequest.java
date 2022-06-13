@@ -5,12 +5,14 @@ import lombok.Data;
 import javax.validation.constraints.NotNull;
 
 @Data
-public class ProfileNameResetRequest {
+public class AccountUpdateRequest {
 
     @NotNull
-    String email;
+    String oldUsername;
 
-    @NotNull
+    String newUsername;
+
+    String newEmail;
+
     String newProfileName;
-
 }

@@ -7,9 +7,7 @@ import com.bruincreates.server.exception.BadRequestException;
 import com.bruincreates.server.model.request.PasswordResetRequest;
 import com.bruincreates.server.model.request.PasswordResetUrlRequest;
 import com.bruincreates.server.model.request.RegistrationRequest;
-import com.bruincreates.server.model.request.UsernameResetRequest;
-import com.bruincreates.server.model.request.EmailResetRequest;
-import com.bruincreates.server.model.request.ProfileNameResetRequest;
+import com.bruincreates.server.model.request.AccountUpdateRequest;
 import com.bruincreates.server.utility.JwtUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.validator.routines.EmailValidator;
@@ -122,68 +120,75 @@ public class AccountService {
         userMapper.updateByExampleSelective(user, userExample);
     }
 
-    public void updateUsername(UsernameResetRequest request) throws BadRequestException {
+    public void updateAccount(AccountUpdateRequest request) throws BadRequestException {
 
-        //1. bad username
-        if(request.getNewUsername().equals("")) {
-            throw new BadRequestException("invalid new username");
+        //check given username is valid
+        User tester = findUserByUsername(request.getOldUsername());
+        if(tester == null) {
+            throw new BadRequestException("invalid username");
         }
 
-        //2. if that username is already taken
-        User alreadyTaken = findUserByUsername(request.getNewUsername());
-        if(alreadyTaken != null ) {
-            throw new BadRequestException("username already taken");
+        String usernameToUse = request.getOldUsername(); //keeps track of current username
+
+        //1. Update new username
+        if(request.getNewUsername() != null){
+
+            //invalid new username
+            if(request.getNewUsername().equals("")) {
+                throw new BadRequestException("invalid new username");
+            }
+
+            //new username is already taken
+            User alreadyTaken = findUserByUsername(request.getNewUsername());
+            if(alreadyTaken != null ) {
+                throw new BadRequestException("username already taken");
+            }
+
+            //update new username
+            UserExample userExample = new UserExample();
+            userExample.createCriteria().andUsernameEqualTo(request.getOldUsername());
+            User user = new User();
+            user.setUsername(request.getNewUsername());
+            userMapper.updateByExampleSelective(user, userExample);
+
+            usernameToUse = request.getNewUsername(); //update the current username
         }
 
-        UserExample userExample = new UserExample();
-        userExample.createCriteria().andUsernameEqualTo(request.getOldUsername());
-        User user = new User();
-        user.setUsername(request.getNewUsername());
-        userMapper.updateByExampleSelective(user, userExample);
-    }
+        //2. Update new email
+        if(request.getNewEmail()!=null){
+            //validate email
+            boolean validEmail = EmailValidator.getInstance().isValid(request.getNewEmail());
+            if (!validEmail) {
+                throw new BadRequestException("wrong email format");
+            }
 
-    public void updateEmail(EmailResetRequest request) throws BadRequestException {
+            //new email is already taken
+            User alreadyTaken = findUserByEmail(request.getNewEmail());
+            if(alreadyTaken != null ) {
+                throw new BadRequestException("email already taken");
+            }
 
-        //1. validate email
-        boolean validEmail = EmailValidator.getInstance().isValid(request.getNewEmail());
-        if (!validEmail) {
-            throw new BadRequestException("wrong email format");
+            //update the email
+            UserExample userExample = new UserExample();
+            userExample.createCriteria().andUsernameEqualTo(usernameToUse);
+            User user = new User();
+            user.setEmail(request.getNewEmail());
+            userMapper.updateByExampleSelective(user, userExample);
         }
 
-        //2. if new email is already taken
-        User alreadyTaken = findUserByEmail(request.getNewEmail());
-        if(alreadyTaken != null ) {
-            throw new BadRequestException("email already taken");
+        //3. Update new profile name
+        if(request.getNewEmail()!=null){
+            //empty new profile name
+            if(request.getNewProfileName().equals("")) {
+                throw new BadRequestException("invalid new profile name");
+            }
+
+            //set new profile name
+            UserExample userExample = new UserExample();
+            userExample.createCriteria().andUsernameEqualTo(usernameToUse);
+            User user = new User();
+            user.setProfileName(request.getNewProfileName());
+            userMapper.updateByExampleSelective(user, userExample);
         }
-
-        //get username using the old email
-        User temp = findUserByEmail(request.getOldEmail());
-        String username = temp.getUsername();
-
-        //update the email
-        UserExample userExample = new UserExample();
-        userExample.createCriteria().andUsernameEqualTo(username);
-        User user = new User();
-        user.setEmail(request.getNewEmail());
-        userMapper.updateByExampleSelective(user, userExample);
-    }
-
-    public void updateProfileName(ProfileNameResetRequest request) throws BadRequestException {
-
-        //1. empty new profile name
-        if(request.getNewProfileName().equals("")) {
-            throw new BadRequestException("invalid new profile name");
-        }
-
-        //get username using the email
-        User temp = findUserByEmail(request.getEmail());
-        String username = temp.getUsername();
-
-        //set new profile name
-        UserExample userExample = new UserExample();
-        userExample.createCriteria().andUsernameEqualTo(username);
-        User user = new User();
-        user.setProfileName(request.getNewProfileName());
-        userMapper.updateByExampleSelective(user, userExample);
     }
 }
