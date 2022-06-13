@@ -7,6 +7,9 @@ import com.bruincreates.server.exception.BadRequestException;
 import com.bruincreates.server.model.request.PasswordResetRequest;
 import com.bruincreates.server.model.request.PasswordResetUrlRequest;
 import com.bruincreates.server.model.request.RegistrationRequest;
+import com.bruincreates.server.model.request.UsernameResetRequest;
+import com.bruincreates.server.model.request.EmailResetRequest;
+import com.bruincreates.server.model.request.ProfileNameResetRequest;
 import com.bruincreates.server.utility.JwtUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.validator.routines.EmailValidator;
@@ -116,6 +119,71 @@ public class AccountService {
         userExample.createCriteria().andUsernameEqualTo(username);
         User user = new User();
         user.setPassword(passwordEncoder.encode(password));
+        userMapper.updateByExampleSelective(user, userExample);
+    }
+
+    public void updateUsername(UsernameResetRequest request) throws BadRequestException {
+
+        //1. bad username
+        if(request.getNewUsername().equals("")) {
+            throw new BadRequestException("invalid new username");
+        }
+
+        //2. if that username is already taken
+        User alreadyTaken = findUserByUsername(request.getNewUsername());
+        if(alreadyTaken != null ) {
+            throw new BadRequestException("username already taken");
+        }
+
+        UserExample userExample = new UserExample();
+        userExample.createCriteria().andUsernameEqualTo(request.getOldUsername());
+        User user = new User();
+        user.setUsername(request.getNewUsername());
+        userMapper.updateByExampleSelective(user, userExample);
+    }
+
+    public void updateEmail(EmailResetRequest request) throws BadRequestException {
+
+        //1. validate email
+        boolean validEmail = EmailValidator.getInstance().isValid(request.getNewEmail());
+        if (!validEmail) {
+            throw new BadRequestException("wrong email format");
+        }
+
+        //2. if new email is already taken
+        User alreadyTaken = findUserByEmail(request.getNewEmail());
+        if(alreadyTaken != null ) {
+            throw new BadRequestException("email already taken");
+        }
+
+        //get username using the old email
+        User temp = findUserByEmail(request.getOldEmail());
+        String username = temp.getUsername();
+
+        //update the email
+        UserExample userExample = new UserExample();
+        userExample.createCriteria().andUsernameEqualTo(username);
+        User user = new User();
+        user.setEmail(request.getNewEmail());
+        userMapper.updateByExampleSelective(user, userExample);
+    }
+
+    public void updateProfileName(ProfileNameResetRequest request) throws BadRequestException {
+
+        //1. empty new profile name
+        if(request.getNewProfileName().equals("")) {
+            throw new BadRequestException("invalid new profile name");
+        }
+
+        //get username using the email
+        User temp = findUserByEmail(request.getEmail());
+        String username = temp.getUsername();
+
+        //set new profile name
+        UserExample userExample = new UserExample();
+        userExample.createCriteria().andUsernameEqualTo(username);
+        User user = new User();
+        user.setProfileName(request.getNewProfileName());
         userMapper.updateByExampleSelective(user, userExample);
     }
 }

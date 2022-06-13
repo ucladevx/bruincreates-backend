@@ -4,6 +4,9 @@ import com.bruincreates.server.exception.BadRequestException;
 import com.bruincreates.server.model.request.PasswordResetRequest;
 import com.bruincreates.server.model.request.PasswordResetUrlRequest;
 import com.bruincreates.server.model.request.RegistrationRequest;
+import com.bruincreates.server.model.request.UsernameResetRequest;
+import com.bruincreates.server.model.request.EmailResetRequest;
+import com.bruincreates.server.model.request.ProfileNameResetRequest;
 import com.bruincreates.server.model.response.RestResponse;
 import com.bruincreates.server.model.user.UserControlBlock;
 import com.bruincreates.server.service.AccountService;
@@ -51,6 +54,24 @@ public class AccountController {
     public RestResponse<String> resetPassword(@Valid @RequestBody PasswordResetRequest request) throws BadRequestException {
         accountService.resetPassword(request);
         return RestResponse.success("password reset success");
+    }
+
+    @PutMapping("/updateUsername")
+    public RestResponse<String> updateUsername(@Valid @RequestBody UsernameResetRequest request) throws BadRequestException {
+        accountService.updateUsername(request);
+        return RestResponse.success("username update success");
+    }
+
+    @PutMapping("/updateEmail")
+    public RestResponse<String> updateEmail(@Valid @RequestBody EmailResetRequest request) throws BadRequestException {
+        accountService.updateEmail(request);
+        return RestResponse.success("email update success");
+    }
+
+    @PutMapping("/updateProfileName")
+    public RestResponse<String> updateProfileName(@Valid @RequestBody ProfileNameResetRequest request) throws BadRequestException {
+        accountService.updateProfileName(request);
+        return RestResponse.success("profile name update success");
     }
 
 }
