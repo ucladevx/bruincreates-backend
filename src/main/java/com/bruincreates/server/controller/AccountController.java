@@ -1,6 +1,7 @@
 package com.bruincreates.server.controller;
 
 import com.bruincreates.server.exception.BadRequestException;
+import com.bruincreates.server.model.request.AccountUpdateRequest;
 import com.bruincreates.server.model.request.PasswordResetRequest;
 import com.bruincreates.server.model.request.PasswordResetUrlRequest;
 import com.bruincreates.server.model.request.RegistrationRequest;
@@ -51,6 +52,12 @@ public class AccountController {
     public RestResponse<String> resetPassword(@Valid @RequestBody PasswordResetRequest request) throws BadRequestException {
         accountService.resetPassword(request);
         return RestResponse.success("password reset success");
+    }
+
+    @PutMapping("/updateAccount")
+    public RestResponse<String> updateAccount(@Valid @RequestBody AccountUpdateRequest request) throws BadRequestException {
+        accountService.updateAccount(request);
+        return RestResponse.success("account update success");
     }
 
 }
