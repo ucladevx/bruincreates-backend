@@ -1,5 +1,6 @@
 package com.bruincreates.server.controller;
 
+import com.bruincreates.server.dao.po.Product;
 import com.bruincreates.server.exception.BadRequestException;
 import com.bruincreates.server.model.request.AccountUpdateRequest;
 import com.bruincreates.server.model.request.PasswordResetRequest;
@@ -9,6 +10,7 @@ import com.bruincreates.server.model.response.RestResponse;
 import com.bruincreates.server.model.user.UserControlBlock;
 import com.bruincreates.server.service.AccountService;
 import com.bruincreates.server.utility.JwtUtil;
+import com.bruincreates.server.utility.UserUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -56,7 +58,8 @@ public class AccountController {
 
     @PutMapping("/updateAccount")
     public RestResponse<String> updateAccount(@Valid @RequestBody AccountUpdateRequest request) throws BadRequestException {
-        accountService.updateAccount(request);
+        String username = UserUtil.getRuntimeUser().getUsername();
+        accountService.updateAccount(username, request);
         return RestResponse.success("account update success");
     }
 

@@ -9,7 +9,6 @@ import com.bruincreates.server.model.request.PasswordResetUrlRequest;
 import com.bruincreates.server.model.request.RegistrationRequest;
 import com.bruincreates.server.model.request.AccountUpdateRequest;
 import com.bruincreates.server.utility.JwtUtil;
-import com.bruincreates.server.utility.UserUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.validator.routines.EmailValidator;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -121,11 +120,10 @@ public class AccountService {
         userMapper.updateByExampleSelective(user, userExample);
     }
 
-    public void updateAccount(AccountUpdateRequest request) throws BadRequestException {
+    public void updateAccount(String username, AccountUpdateRequest request) throws BadRequestException {
 
         //1. Validate new username
         if(request.getNewUsername() != null){
-
             //invalid new username
             if(request.getNewUsername().equals("") || request.getNewUsername().contains(" ")) {
                 throw new BadRequestException("invalid new username");
@@ -136,12 +134,10 @@ public class AccountService {
             if(alreadyTaken != null) {
                 throw new BadRequestException("username already taken");
             }
-
         }
 
         //2. Validate new email
         if(request.getNewEmail() != null){
-
             //check if the new email is valid
             boolean validEmail = EmailValidator.getInstance().isValid(request.getNewEmail());
             if (!validEmail) {
@@ -153,7 +149,6 @@ public class AccountService {
             if(alreadyTaken != null) {
                 throw new BadRequestException("email already taken");
             }
-
         }
 
         //3. Validate new profile name
@@ -166,7 +161,7 @@ public class AccountService {
 
         //4. Now, after validating, update it all into the database
         UserExample userExample = new UserExample();
-        userExample.createCriteria().andUsernameEqualTo(UserUtil.getRuntimeUser().getUsername());
+        userExample.createCriteria().andUsernameEqualTo(username);
         User user = new User();
 
         if(request.getNewEmail() != null) {
