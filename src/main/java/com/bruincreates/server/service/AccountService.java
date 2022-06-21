@@ -7,6 +7,7 @@ import com.bruincreates.server.exception.BadRequestException;
 import com.bruincreates.server.model.request.PasswordResetRequest;
 import com.bruincreates.server.model.request.PasswordResetUrlRequest;
 import com.bruincreates.server.model.request.RegistrationRequest;
+import com.bruincreates.server.model.request.AccountUpdateRequest;
 import com.bruincreates.server.utility.JwtUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.validator.routines.EmailValidator;
@@ -117,5 +118,63 @@ public class AccountService {
         User user = new User();
         user.setPassword(passwordEncoder.encode(password));
         userMapper.updateByExampleSelective(user, userExample);
+    }
+
+    public void updateAccount(String username, AccountUpdateRequest request) throws BadRequestException {
+
+        //1. Validate new username
+        if(request.getNewUsername() != null){
+            //invalid new username
+            if(request.getNewUsername().equals("") || request.getNewUsername().contains(" ")) {
+                throw new BadRequestException("invalid new username");
+            }
+
+            //new username is already taken
+            User alreadyTaken = findUserByUsername(request.getNewUsername());
+            if(alreadyTaken != null) {
+                throw new BadRequestException("username already taken");
+            }
+        }
+
+        //2. Validate new email
+        if(request.getNewEmail() != null){
+            //check if the new email is valid
+            boolean validEmail = EmailValidator.getInstance().isValid(request.getNewEmail());
+            if (!validEmail) {
+                throw new BadRequestException("wrong email format");
+            }
+
+            //new email is already taken
+            User alreadyTaken = findUserByEmail(request.getNewEmail());
+            if(alreadyTaken != null) {
+                throw new BadRequestException("email already taken");
+            }
+        }
+
+        //3. Validate new profile name
+        if(request.getNewProfileName() != null){
+            //empty new profile name
+            if(request.getNewProfileName().equals("")) {
+                throw new BadRequestException("invalid new profile name");
+            }
+        }
+
+        //4. Now, after validating, update it all into the database
+        UserExample userExample = new UserExample();
+        userExample.createCriteria().andUsernameEqualTo(username);
+        User user = new User();
+
+        if(request.getNewEmail() != null) {
+            user.setEmail(request.getNewEmail());
+        }
+        if(request.getNewProfileName() != null) {
+            user.setProfileName(request.getNewProfileName());
+        }
+        if(request.getNewUsername() != null) {
+            user.setUsername(request.getNewUsername());
+        }
+
+        userMapper.updateByExampleSelective(user, userExample);
+
     }
 }
