@@ -9,6 +9,7 @@ import com.bruincreates.server.model.request.PasswordResetUrlRequest;
 import com.bruincreates.server.model.request.RegistrationRequest;
 import com.bruincreates.server.model.request.AccountUpdateRequest;
 import com.bruincreates.server.utility.JwtUtil;
+import com.bruincreates.server.utility.UserUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.validator.routines.EmailValidator;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -122,41 +123,26 @@ public class AccountService {
 
     public void updateAccount(AccountUpdateRequest request) throws BadRequestException {
 
-        //check given username is valid
-        User tester = findUserByUsername(request.getOldUsername());
-        if(tester == null) {
-            throw new BadRequestException("invalid username");
-        }
-
-        String usernameToUse = request.getOldUsername(); //keeps track of current username
-
-        //1. Update new username
+        //1. Validate new username
         if(request.getNewUsername() != null){
 
             //invalid new username
-            if(request.getNewUsername().equals("")) {
+            if(request.getNewUsername().equals("") || request.getNewUsername().contains(" ")) {
                 throw new BadRequestException("invalid new username");
             }
 
             //new username is already taken
             User alreadyTaken = findUserByUsername(request.getNewUsername());
-            if(alreadyTaken != null ) {
+            if(alreadyTaken != null) {
                 throw new BadRequestException("username already taken");
             }
 
-            //update new username
-            UserExample userExample = new UserExample();
-            userExample.createCriteria().andUsernameEqualTo(request.getOldUsername());
-            User user = new User();
-            user.setUsername(request.getNewUsername());
-            userMapper.updateByExampleSelective(user, userExample);
-
-            usernameToUse = request.getNewUsername(); //update the current username
         }
 
-        //2. Update new email
-        if(request.getNewEmail()!=null){
-            //validate email
+        //2. Validate new email
+        if(request.getNewEmail() != null){
+
+            //check if the new email is valid
             boolean validEmail = EmailValidator.getInstance().isValid(request.getNewEmail());
             if (!validEmail) {
                 throw new BadRequestException("wrong email format");
@@ -164,31 +150,36 @@ public class AccountService {
 
             //new email is already taken
             User alreadyTaken = findUserByEmail(request.getNewEmail());
-            if(alreadyTaken != null ) {
+            if(alreadyTaken != null) {
                 throw new BadRequestException("email already taken");
             }
 
-            //update the email
-            UserExample userExample = new UserExample();
-            userExample.createCriteria().andUsernameEqualTo(usernameToUse);
-            User user = new User();
-            user.setEmail(request.getNewEmail());
-            userMapper.updateByExampleSelective(user, userExample);
         }
 
-        //3. Update new profile name
-        if(request.getNewEmail()!=null){
+        //3. Validate new profile name
+        if(request.getNewProfileName() != null){
             //empty new profile name
             if(request.getNewProfileName().equals("")) {
                 throw new BadRequestException("invalid new profile name");
             }
-
-            //set new profile name
-            UserExample userExample = new UserExample();
-            userExample.createCriteria().andUsernameEqualTo(usernameToUse);
-            User user = new User();
-            user.setProfileName(request.getNewProfileName());
-            userMapper.updateByExampleSelective(user, userExample);
         }
+
+        //4. Now, after validating, update it all into the database
+        UserExample userExample = new UserExample();
+        userExample.createCriteria().andUsernameEqualTo(UserUtil.getRuntimeUser().getUsername());
+        User user = new User();
+
+        if(request.getNewEmail() != null) {
+            user.setEmail(request.getNewEmail());
+        }
+        if(request.getNewProfileName() != null) {
+            user.setProfileName(request.getNewProfileName());
+        }
+        if(request.getNewUsername() != null) {
+            user.setUsername(request.getNewUsername());
+        }
+
+        userMapper.updateByExampleSelective(user, userExample);
+
     }
 }
