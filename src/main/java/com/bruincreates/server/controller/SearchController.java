@@ -20,7 +20,7 @@ public class SearchController {
     @Autowired
     SearchService searchService;
 
-    @PostMapping("/artwork")
+    @PostMapping("/products")
     public RestResponse<SearchResponse> searchItem(@Valid @RequestBody SearchRequest request) {
         //TODO: implementation needed
         //TODO: pre-process keywords. e.g. "asa-sasa asa sasa" = "asa sasa"
@@ -29,18 +29,6 @@ public class SearchController {
         //TODO: pagination and how to indicate no more data available
         //TODO: should you return the entire product to frontend? how about just product id and product url?
         SearchResponse response = searchService.searchDocument(request);
-        return RestResponse.success(response);
-    }
-
-    @PostMapping("/service")
-    public RestResponse<SearchResponse> searchService(@Valid @RequestBody SearchRequest request) {
-        //TODO: implementation needed
-        //TODO: pre-process keywords. e.g. "asa-sasa asa sasa" = "asa sasa"
-        //TODO: search priority. e.g. category is a must match, keyword is a fuzzy search
-        //TODO: result priority. how should you sort your match result if two results have the same ES score
-        //TODO: pagination and how to indicate no more data available
-        //TODO: should you return the entire product to frontend? how about just product id and product url?
-        SearchResponse response = null;
         return RestResponse.success(response);
     }
 }
