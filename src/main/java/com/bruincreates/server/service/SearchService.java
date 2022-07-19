@@ -7,31 +7,13 @@ import com.bruincreates.server.repository.SearchRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.List;
 
 @Service
 public class SearchService {
 
     @Autowired
     SearchRepository searchRepository;
-
-    public List<String> processKeywords(String keywords) {
-        List<String> keywordsList = Arrays.asList(keywords.split("\\P{L}+"));
-        int keywordsListLength = keywordsList.size();
-
-        Set<String> keywordsSet = new HashSet<String>();
-        for (int i = 0; i < keywordsListLength; i++) {
-            keywordsSet.add(keywordsList.get(i));
-        }
-
-        List<String> processedKeywords = new ArrayList<String>();
-        Iterator it = keywordsSet.iterator();
-        while (it.hasNext()) {
-            processedKeywords.add((String) it.next());
-        }
-
-        return processedKeywords;
-    }
 
     //TODO: functions for your search logic below:
     public SearchResponse searchDocument(SearchRequest request) {

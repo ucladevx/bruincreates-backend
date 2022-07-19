@@ -21,8 +21,8 @@ public class SearchController {
 
     @PostMapping("/products")
     public RestResponse<SearchResponse> searchItem(@Valid @RequestBody SearchRequest request) {
-        String keywords = request.getKeywords();
-        List<String> processedKeywords = searchService.processKeywords(keywords);
+//        String keywords = request.getKeywords();
+//        List<String> processedKeywords = searchService.processKeywords(keywords);
 
         //TODO: search priority. e.g. category is a must match, keyword is a fuzzy search
         //TODO: result priority. how should you sort your match result if two results have the same ES score
