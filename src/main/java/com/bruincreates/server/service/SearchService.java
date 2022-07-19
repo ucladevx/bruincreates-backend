@@ -13,23 +13,7 @@ import java.util.List;
 public class SearchService {
 
     @Autowired
-    private final SearchRepository searchRepository;
-
-    public SearchService(SearchRepository searchRepository) {
-        this.searchRepository = searchRepository;
-    }
-
-    //TODO: functions called by ProductService to sync MySql data with Elasticsearch
-    //e.g. ProductService.java
-    //          task: insert a new product
-    //          ProductMapper.insertSelective(someProduct); //insert to MySql
-    //          SearchService.createDocument(someProduct);  //insert to Elasticsearch
-
-    public void createDocument(Product product) {}
-
-    public void updateDocument(Product product) {}
-
-    public void deleteDocument(Product product) {}
+    SearchRepository searchRepository;
 
     //TODO: functions for your search logic below:
     public SearchResponse searchDocument(SearchRequest request) {
