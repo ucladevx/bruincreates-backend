@@ -7,12 +7,5 @@ import java.util.List;
 
 @Data
 public class SearchRequest {
-    @NotNull
-    int size;
-
-    @NotNull
-    int from;
-
     String keywords;
-    List<String> categories;
 }
