@@ -1,7 +1,6 @@
 package com.bruincreates.server.service;
 
 import com.bruincreates.server.dao.po.Product;
-import com.bruincreates.server.model.request.SearchRequest;
 import com.bruincreates.server.model.response.SearchResponse;
 import com.bruincreates.server.repository.SearchRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,10 +16,9 @@ public class SearchService {
 
     public List<String> processKeywords(String keywords) {
         List<String> keywordsList = Arrays.asList(keywords.split("\\P{L}+"));
-        int keywordsListLength = keywordsList.size();
 
         Set<String> keywordsSet = new HashSet<String>();
-        for (int i = 0; i < keywordsListLength; i++) {
+        for (int i = 0; i < keywordsList.size(); i++) {
             keywordsSet.add(keywordsList.get(i));
         }
 
@@ -33,13 +31,29 @@ public class SearchService {
         return processedKeywords;
     }
 
+    private void mergeListsRemovingDuplicates (List<Product> list1, List<Product> list2) {
+        list1.removeAll(list2);
+        list1.addAll(list2);
+    }
+
     //TODO: functions for your search logic below:
-    public SearchResponse searchDocument(SearchRequest request) {
-        String keywords = request.getKeywords();
-        List<Product> productMatch = searchRepository.findByProductTitle(keywords);
+    public SearchResponse getSearchResults(List<String> keywords) {
+        List<Product> results = new ArrayList<>();
+
+        for (int i = 0; i < keywords.size(); i++) {
+            List<Product> productsWithMatchingTitle = searchRepository.findByProductTitleContaining(keywords.get(i));
+            mergeListsRemovingDuplicates(results, productsWithMatchingTitle);
+
+            List<Product> productsWithMatchingDescription = searchRepository.findByProductDescriptionContaining(keywords.get(i));
+            mergeListsRemovingDuplicates(results, productsWithMatchingDescription);
+
+            List<Product> productsWithMatchingKeywords = searchRepository.findByKeywordsContaining(keywords.get(i));
+            mergeListsRemovingDuplicates(results, productsWithMatchingKeywords);
+        }
+
         SearchResponse response = new SearchResponse();
-        response.setProducts(productMatch);
-        response.setHits(productMatch.size());
+        response.setProducts(results);
+        response.setHits(results.size());
         return response;
     }
 }

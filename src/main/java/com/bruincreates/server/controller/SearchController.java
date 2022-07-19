@@ -20,15 +20,15 @@ public class SearchController {
     SearchService searchService;
 
     @PostMapping("/products")
-    public RestResponse<SearchResponse> searchItem(@Valid @RequestBody SearchRequest request) {
+    public RestResponse<SearchResponse> searchProducts(@Valid @RequestBody SearchRequest request) {
         String keywords = request.getKeywords();
         List<String> processedKeywords = searchService.processKeywords(keywords);
+        SearchResponse response = searchService.getSearchResults(processedKeywords);
 
         //TODO: search priority. e.g. category is a must match, keyword is a fuzzy search
         //TODO: result priority. how should you sort your match result if two results have the same ES score
         //TODO: pagination and how to indicate no more data available
         //TODO: should you return the entire product to frontend? how about just product id and product url?
-        SearchResponse response = searchService.searchDocument(request);
         return RestResponse.success(response);
     }
 }
