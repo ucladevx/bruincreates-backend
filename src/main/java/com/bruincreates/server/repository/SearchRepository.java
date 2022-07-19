@@ -8,9 +8,6 @@ import java.util.List;
 
 @Repository
 public interface SearchRepository extends ElasticsearchRepository<Product,Long>{
-    List<Product> findByProductTitleContaining(String productName);
-    List<Product> findByProductDescriptionContaining(String productName);
-    List<Product> findByKeywordsContaining(String productName);
-
+    List<Product> findByProductTitle(String productName);
     void deleteByProductId(String productId);
 }
