@@ -15,7 +15,7 @@ public class Product {
      * @mbg.generated Sat Jan 29 19:31:53 PST 2022
      */
     @Id
-    private Integer id;
+    private String id;
 
     /**
      *
@@ -133,7 +133,7 @@ public class Product {
      *
      * @mbg.generated Sat Jan 29 19:31:53 PST 2022
      */
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
@@ -145,7 +145,7 @@ public class Product {
      *
      * @mbg.generated Sat Jan 29 19:31:53 PST 2022
      */
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
