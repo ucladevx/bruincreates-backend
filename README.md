@@ -8,19 +8,47 @@ BruinCreates is an E-commerce shopping site for visual art students at UCLA.
 
 ## Requirements
 
-For building and running the application you need, also see below for download and installment toturials:
+For building and running the application you need, also see below for download and installment tutorials:
 
 - [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+  - **Windows Users**:
+    - Verify installation using `java -version` command in CMD prompt
+    - Make sure that you install the **64-bit** version of JAVA https://www.java.com/en/download/ as the 32-bit version does not work with Elasticsearch
+    - Configure `JAVA_HOME` environment variable by editing system environment variables
+      <img src="./resources/Env_var.png">
+    - Add `JAVA_HOME` to `PATH`
 - [Maven 3.8.3](https://maven.apache.org)
+  - **Windows Users**:
+      - Download `.zip` file and extract packages into local directory (any one will do)
+      - Configure `MAVEN_HOME` environment variable by editing system environment variables
+        <img src="./resources/Env_var.png">
+      - Add `%MAVEN_HOME%\bin` to PATH
+        <img src="./resources/Path_var.png">
+        <img src="./resources/Path_var0.png">
 - [MySql 8.0.25](https://downloads.mysql.com/archives/community/)
-- [Redis 6.2.6](https://redis.io/) 
+  - **Windows Users**:
+    - Download the MSI installer https://dev.mysql.com/downloads/installer/
+    - Run the SQL server on the MySQL workbench (just a user interface to interact with the DB server)
+- [Redis 6.2.6](https://redis.io/)
+  - **Windows Users**:
+    - Redis is not supported on Windows so we have to install it on our system through WSL virtualization of Linux (Ubuntu)
+    - Follow the instructions on this link and test Redis server on PORT:6379
+    https://redis.io/docs/getting-started/installation/install-redis-on-windows/
 - [Elasticsearch 6.8.12](https://www.elastic.co/downloads/past-releases/elasticsearch-6-8-12)
-
+  - **Windows Users**:
+    - Download Elasticsearch `.zip` file and extract it to any directory
+    - Navigate into directory and run `.\bin\elasticsearch` to start service
+    - Possible Bugs:
+      - `Exception[X-Pack is not supported and Machine Learning is not available for [windows-x86]`: Java version is 32 bit and not 64 bit 
+      - `Native memory allocation (malloc) failed to allocate 201326592 bytes for committing reserved memory.`: Set JVM heap size limits by configuring the `_JAVA_OPTIONS` system variable with value `-Xmx500m -Xms200m`
+      <img src="./resources/env_var2.png">
 Please **make sure** to have MySql, Redis, Elasticsearch server running before starting the SpringBoot server.
 
 ## Running the application locally
 
 There are several ways to run a Spring Boot application on your local machine. One way is to execute the `main` method in the `com.bruincreates.server.ServerApplication` class from your IDE.
+- Example from VSCode
+<img src="./resources/main.png">
 
 ```shell
 # make sure project dependencies are connect
@@ -52,6 +80,8 @@ mvn spring-boot:run
 ```
 
 ## Test the application locally
+API Endpoints can be tested using PostMan Desktop application.
+
 This project is secured using Spring Security and Spring Session Redis. Authentication is needed before accessing the server, for example:
 
 ```shell
